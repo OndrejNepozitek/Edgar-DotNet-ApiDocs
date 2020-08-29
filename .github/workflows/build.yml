@@ -54,7 +54,7 @@ jobs:
         rm -r src/dev/checkout
     
     # DocFx metadata
-    - uses: OndrejNepozitek/docfx-action@master
+    - uses: ondrejnepozitek/docfx-action@master
       name: DocFx metadata
       with:
         args: metadata
@@ -74,7 +74,7 @@ jobs:
       run: sudo node toc.js
 
     # DocFx build
-    - uses: OndrejNepozitek/docfx-action@master
+    - uses: ondrejnepozitek/docfx-action@master
       name: DocFx build
       with:
         args: build
