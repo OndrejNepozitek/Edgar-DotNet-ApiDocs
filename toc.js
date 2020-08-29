@@ -137,5 +137,5 @@ function transformToc(path) {
     // fs.writeFileSync('./toc_new.yml', yaml.safeDump(items));
 }
 
-// transformToc('./versions/master/api/toc.yml');
+transformToc('./versions/master/api/toc.yml');
 transformToc('./versions/dev/api/toc.yml');
