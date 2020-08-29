@@ -48,8 +48,8 @@ jobs:
       run: |
         cp src/master/Edgar/bin/Debug/netstandard2.0/Edgar.dll src/master/Edgar.dll
         cp src/master/Edgar/bin/Debug/netstandard2.0/Edgar.xml src/master/Edgar.xml
-        cp src/dev/Edgar/bin/Debug/netstandard2.0/Edgar.dll dev/dev/Edgar.dll
-        cp src/dev/Edgar/bin/Debug/netstandard2.0/Edgar.xml dev/dev/Edgar.xml
+        cp src/dev/Edgar/bin/Debug/netstandard2.0/Edgar.dll src/dev/Edgar.dll
+        cp src/dev/Edgar/bin/Debug/netstandard2.0/Edgar.xml src/dev/Edgar.xml
     
     # DocFx metadata
     - uses: nikeee/docfx-action@master
