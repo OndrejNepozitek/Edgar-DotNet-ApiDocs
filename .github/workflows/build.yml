@@ -25,7 +25,7 @@ jobs:
         repository: OndrejNepozitek/Edgar-DotNet
         # ref: master
         ref: dev
-        path: src/master
+        path: src/master/checkout
 
     # Checkout Edgar-DotNet dev branch
     - uses: actions/checkout@v2
@@ -33,23 +33,25 @@ jobs:
       with:
         repository: OndrejNepozitek/Edgar-DotNet
         ref: dev
-        path: src/dev
+        path: src/dev/checkout
 
     # Build master
     - name: Build master
-      run: dotnet build src/master/Edgar/Edgar.csproj
+      run: dotnet build src/master/checkout/Edgar/Edgar.csproj
 
     # Build dev
     - name: Build dev
-      run: dotnet build src/dev/Edgar/Edgar.csproj
+      run: dotnet build src/dev/checkout/Edgar/Edgar.csproj
 
     # Copy dlls and xml comments
     - name: Copy dlls and xml comments
       run: |
-        cp src/master/Edgar/bin/Debug/netstandard2.0/Edgar.dll src/master/Edgar.dll
-        cp src/master/Edgar/bin/Debug/netstandard2.0/Edgar.xml src/master/Edgar.xml
-        cp src/dev/Edgar/bin/Debug/netstandard2.0/Edgar.dll src/dev/Edgar.dll
-        cp src/dev/Edgar/bin/Debug/netstandard2.0/Edgar.xml src/dev/Edgar.xml
+        cp src/master/checkout/Edgar/bin/Debug/netstandard2.0/Edgar.dll src/master/Edgar.dll
+        cp src/master/checkout/Edgar/bin/Debug/netstandard2.0/Edgar.xml src/master/Edgar.xml
+        cp src/dev/checkout/Edgar/bin/Debug/netstandard2.0/Edgar.dll src/dev/Edgar.dll
+        cp src/dev/checkout/Edgar/bin/Debug/netstandard2.0/Edgar.xml src/dev/Edgar.xml
+        rm -r src/master/checkout
+        rm -r src/dev/checkout
     
     # DocFx metadata
     - uses: nikeee/docfx-action@master
