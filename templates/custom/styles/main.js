@@ -4,7 +4,9 @@ containers.removeClass("container");
 containers.addClass("container-fluid");
 
 $(function() {
-    $(".nav.level1 > li").addClass("in");
+    setTimeout(() => {
+        $(".nav.level1 >li").addClass("in");
+    }, 200)
 })
 
 $(function() {
