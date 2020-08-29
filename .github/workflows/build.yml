@@ -46,10 +46,10 @@ jobs:
     # Copy dlls and xml comments
     - name: Copy dlls and xml comments
       run: |
-        cp src/master/Edgar/bin/Debug/netstandard2.0/Edgar.dll src/master/
-        cp src/master/Edgar/bin/Debug/netstandard2.0/Edgar.xml src/master/
-        cp src/dev/Edgar/bin/Debug/netstandard2.0/Edgar.dll dev/master/
-        cp src/dev/Edgar/bin/Debug/netstandard2.0/Edgar.xml dev/master/
+        cp src/master/Edgar/bin/Debug/netstandard2.0/Edgar.dll src/master/Edgar.dll
+        cp src/master/Edgar/bin/Debug/netstandard2.0/Edgar.xml src/master/Edgar.xml
+        cp src/dev/Edgar/bin/Debug/netstandard2.0/Edgar.dll dev/dev/Edgar.dll
+        cp src/dev/Edgar/bin/Debug/netstandard2.0/Edgar.xml dev/dev/Edgar.xml
     
     # DocFx metadata
     - uses: nikeee/docfx-action@master
