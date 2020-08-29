@@ -1,0 +1,82 @@
+name: Build
+
+on: [push, repository_dispatch]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+
+    # Checkout this repository
+    - name: Checkout this repository
+      uses: actions/checkout@v2
+
+    # Setup DotNet CLI
+    - uses: actions/setup-dotnet@v1
+      name: Setup DotNet CLI
+      with:
+        dotnet-version: '3.1.x'
+
+    # Checkout Edgar-DotNet master branch
+    - uses: actions/checkout@v2
+      name: Checkout Unity plugin master branch
+      with:
+        repository: OndrejNepozitek/Edgar-DotNet
+        # ref: master
+        ref: dev
+        path: src/master
+
+    # Checkout Edgar-DotNet dev branch
+    - uses: actions/checkout@v2
+      name: Checkout Unity plugin dev branch
+      with:
+        repository: OndrejNepozitek/Edgar-DotNet
+        ref: dev
+        path: src/dev
+
+    # Build master and copy files
+    - name: Build master
+      run: |
+        dotnet build src/master/EdgarDotNet.sln
+        cp src/master/Edgar/bin/Debug/netstandard2.0/Edgar.dll src/master/
+        cp src/master/Edgar/bin/Debug/netstandard2.0/Edgar.xml src/master/
+
+    # Build dev and copy files
+    - name: Build dev
+      run: |
+        dotnet build src/master/EdgarDotNet.sln
+        cp src/dev/Edgar/bin/Debug/netstandard2.0/Edgar.dll dev/master/
+        cp src/dev/Edgar/bin/Debug/netstandard2.0/Edgar.xml dev/master/
+    
+    # DocFx metadata
+    - uses: nikeee/docfx-action@master
+      name: DocFx metadata
+      with:
+        args: metadata
+
+    # Install node
+    - name: Install node
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+
+    # Install js-yaml
+    - name: Install js-yaml
+      run: npm install js-yaml
+
+    # Run toc.js
+    - name: Run toc.js
+      run: sudo node toc.js
+
+    # DocFx build
+    - uses: nikeee/docfx-action@master
+      name: DocFx build
+      with:
+        args: build
+
+    # Publish to Github Pages
+    - uses: maxheld83/ghpages@v0.3.0
+      env:
+        BUILD_DIR: _site/
+        GH_PAT: ${{ secrets.GH_PAT }}
