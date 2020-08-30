@@ -1,4 +1,4 @@
-- name: Procedural Level Generator - Unity
+- name: Edgar-DotNet
   href: ../master/api/
   homepage: ../master/api/index.html
 - name: Api docs master
@@ -8,4 +8,4 @@
   href: ../dev/api/
   homepage: ../dev/api/index.html
 - name: Back to documentation
-  href: https://ondrejnepozitek.github.io/ProceduralLevelGenerator-Unity/
+  href: https://ondrejnepozitek.github.io/Edgar-DotNet/
