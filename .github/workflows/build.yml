@@ -23,8 +23,7 @@ jobs:
       name: Checkout Edgar-DotNet master branch
       with:
         repository: OndrejNepozitek/Edgar-DotNet
-        # ref: master
-        ref: dev
+        ref: master
         path: src/master/checkout
 
     # Checkout Edgar-DotNet dev branch
