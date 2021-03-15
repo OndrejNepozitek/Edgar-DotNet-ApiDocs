@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConfigurationGrid2D&lt;TNode, TEnergyData&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConfigurationGrid2D&lt;TNode, TEnergyData&gt;
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D`2">
+  
+  
+  <h1 id="Edgar_GraphBasedGenerator_Grid2D_Internal_ConfigurationGrid2D_2" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D`2" class="text-break">Class ConfigurationGrid2D&lt;TNode, TEnergyData&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ConfigurationGrid2D&lt;TNode, TEnergyData&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Edgar.GraphBasedGenerator.Common.Configurations.IConfiguration-3.html">IConfiguration</a>&lt;<a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Internal.RoomTemplateInstanceGrid2D.html">RoomTemplateInstanceGrid2D</a>, <a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a>, <a class="xref" href="Edgar.GraphBasedGenerator.Common.RoomNode-1.html">RoomNode</a>&lt;TNode&gt;&gt;</div>
+    <div><a class="xref" href="Edgar.GraphBasedGenerator.Common.Configurations.IShapeConfiguration-1.html">IShapeConfiguration</a>&lt;<a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Internal.RoomTemplateInstanceGrid2D.html">RoomTemplateInstanceGrid2D</a>&gt;</div>
+    <div><a class="xref" href="Edgar.GraphBasedGenerator.Common.Configurations.IPositionConfiguration-1.html">IPositionConfiguration</a>&lt;<a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a>&gt;</div>
+    <div><a class="xref" href="Edgar.GraphBasedGenerator.Common.Configurations.IRoomConfiguration-1.html">IRoomConfiguration</a>&lt;<a class="xref" href="Edgar.GraphBasedGenerator.Common.RoomNode-1.html">RoomNode</a>&lt;TNode&gt;&gt;</div>
+    <div><a class="xref" href="Edgar.GraphBasedGenerator.Common.Configurations.IEnergyConfiguration-1.html">IEnergyConfiguration</a>&lt;TEnergyData&gt;</div>
+    <div><a class="xref" href="Edgar.Legacy.Utils.Interfaces.ISmartCloneable-1.html">ISmartCloneable</a>&lt;<a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D-2.html">ConfigurationGrid2D</a>&lt;TNode, TEnergyData&gt;&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Internal.html">Edgar.GraphBasedGenerator.Grid2D.Internal</a></h6>
+  <h6><strong>Assembly</strong>: Edgar.dll</h6>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_Internal_ConfigurationGrid2D_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ConfigurationGrid2D&lt;TNode, TEnergyData&gt; : Object, IConfiguration&lt;RoomTemplateInstanceGrid2D, Vector2Int, RoomNode&lt;TNode&gt;&gt;, IShapeConfiguration&lt;RoomTemplateInstanceGrid2D&gt;, IPositionConfiguration&lt;Vector2Int&gt;, IRoomConfiguration&lt;RoomNode&lt;TNode&gt;&gt;, IEnergyConfiguration&lt;TEnergyData&gt;, ISmartCloneable&lt;ConfigurationGrid2D&lt;TNode, TEnergyData&gt;&gt; where TEnergyData : IEnergyData, ISmartCloneable&lt;TEnergyData&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TNode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TEnergyData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Internal_ConfigurationGrid2D_2__ctor_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D`2.#ctor*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Internal_ConfigurationGrid2D_2__ctor" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D`2.#ctor">ConfigurationGrid2D()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigurationGrid2D()</code></pre>
+  </div>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Internal_ConfigurationGrid2D_2__ctor_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D`2.#ctor*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Internal_ConfigurationGrid2D_2__ctor_Edgar_GraphBasedGenerator_Grid2D_Internal_RoomTemplateInstanceGrid2D_Edgar_Geometry_Vector2Int__1_Edgar_GraphBasedGenerator_Common_RoomNode__0__" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D`2.#ctor(Edgar.GraphBasedGenerator.Grid2D.Internal.RoomTemplateInstanceGrid2D,Edgar.Geometry.Vector2Int,`1,Edgar.GraphBasedGenerator.Common.RoomNode{`0})">ConfigurationGrid2D(RoomTemplateInstanceGrid2D, Vector2Int, TEnergyData, RoomNode&lt;TNode&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigurationGrid2D(RoomTemplateInstanceGrid2D shape, Vector2Int position, TEnergyData energyData, RoomNode&lt;TNode&gt; node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Internal.RoomTemplateInstanceGrid2D.html">RoomTemplateInstanceGrid2D</a></td>
+        <td><span class="parametername">shape</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TEnergyData</span></td>
+        <td><span class="parametername">energyData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Common.RoomNode-1.html">RoomNode</a>&lt;TNode&gt;</td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Internal_ConfigurationGrid2D_2_EnergyData_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D`2.EnergyData*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Internal_ConfigurationGrid2D_2_EnergyData" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D`2.EnergyData">EnergyData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TEnergyData EnergyData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEnergyData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Internal_ConfigurationGrid2D_2_Position_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D`2.Position*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Internal_ConfigurationGrid2D_2_Position" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D`2.Position">Position</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2Int Position { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Internal_ConfigurationGrid2D_2_Room_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D`2.Room*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Internal_ConfigurationGrid2D_2_Room" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D`2.Room">Room</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoomNode&lt;TNode&gt; Room { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Common.RoomNode-1.html">RoomNode</a>&lt;TNode&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Internal_ConfigurationGrid2D_2_RoomShape_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D`2.RoomShape*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Internal_ConfigurationGrid2D_2_RoomShape" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D`2.RoomShape">RoomShape</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoomTemplateInstanceGrid2D RoomShape { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Internal.RoomTemplateInstanceGrid2D.html">RoomTemplateInstanceGrid2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Internal_ConfigurationGrid2D_2_SmartClone_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D`2.SmartClone*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Internal_ConfigurationGrid2D_2_SmartClone" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D`2.SmartClone">SmartClone()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigurationGrid2D&lt;TNode, TEnergyData&gt; SmartClone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationGrid2D-2.html">ConfigurationGrid2D</a>&lt;TNode, TEnergyData&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Edgar.GraphBasedGenerator.Common.Configurations.IConfiguration-3.html">IConfiguration&lt;TRoomShape, TPosition, TRoom&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Edgar.GraphBasedGenerator.Common.Configurations.IShapeConfiguration-1.html">IShapeConfiguration&lt;TRoomShape&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Edgar.GraphBasedGenerator.Common.Configurations.IPositionConfiguration-1.html">IPositionConfiguration&lt;TPosition&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Edgar.GraphBasedGenerator.Common.Configurations.IRoomConfiguration-1.html">IRoomConfiguration&lt;TRoom&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Edgar.GraphBasedGenerator.Common.Configurations.IEnergyConfiguration-1.html">IEnergyConfiguration&lt;TEnergyData&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Edgar.Legacy.Utils.Interfaces.ISmartCloneable-1.html">ISmartCloneable&lt;T&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

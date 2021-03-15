@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LayoutRoomGrid2D&lt;TRoom&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LayoutRoomGrid2D&lt;TRoom&gt;
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1">
+  
+  
+  <h1 id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1" class="text-break">Class LayoutRoomGrid2D&lt;TRoom&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a single room in the final layout. It contains information about the shape of the room, its position, etc.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">LayoutRoomGrid2D&lt;TRoom&gt;</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.html">Edgar.GraphBasedGenerator.Grid2D</a></h6>
+  <h6><strong>Assembly</strong>: Edgar.dll</h6>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LayoutRoomGrid2D&lt;TRoom&gt; : Object</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRoom</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1__ctor_" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.#ctor*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1__ctor__0_Edgar_Geometry_PolygonGrid2D_Edgar_Geometry_Vector2Int_System_Boolean_Edgar_GraphBasedGenerator_Grid2D_RoomTemplateGrid2D_Edgar_GraphBasedGenerator_Grid2D_RoomDescriptionGrid2D_Edgar_Geometry_TransformationGrid2D_" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.#ctor(`0,Edgar.Geometry.PolygonGrid2D,Edgar.Geometry.Vector2Int,System.Boolean,Edgar.GraphBasedGenerator.Grid2D.RoomTemplateGrid2D,Edgar.GraphBasedGenerator.Grid2D.RoomDescriptionGrid2D,Edgar.Geometry.TransformationGrid2D)">LayoutRoomGrid2D(TRoom, PolygonGrid2D, Vector2Int, Boolean, RoomTemplateGrid2D, RoomDescriptionGrid2D, TransformationGrid2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayoutRoomGrid2D(TRoom room, PolygonGrid2D outline, Vector2Int position, bool isCorridor, RoomTemplateGrid2D roomTemplate, RoomDescriptionGrid2D roomDescription, TransformationGrid2D transformation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRoom</span></td>
+        <td><span class="parametername">room</span></td>
+        <td><p>See the <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D-1.html#Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_Room">Room</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.PolygonGrid2D.html">PolygonGrid2D</a></td>
+        <td><span class="parametername">outline</span></td>
+        <td><p>See the <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D-1.html#Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_Outline">Outline</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>See the <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D-1.html#Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_Position">Position</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isCorridor</span></td>
+        <td><p>See the <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D-1.html#Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_IsCorridor">IsCorridor</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.RoomTemplateGrid2D.html">RoomTemplateGrid2D</a></td>
+        <td><span class="parametername">roomTemplate</span></td>
+        <td><p>See the <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D-1.html#Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_RoomTemplate">RoomTemplate</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.RoomDescriptionGrid2D.html">RoomDescriptionGrid2D</a></td>
+        <td><span class="parametername">roomDescription</span></td>
+        <td><p>See the <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D-1.html#Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_RoomDescription">RoomDescription</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.TransformationGrid2D.html">TransformationGrid2D</a></td>
+        <td><span class="parametername">transformation</span></td>
+        <td><p>See the <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D-1.html#Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_Transformation">Transformation</a> property.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_Doors_" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.Doors*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_Doors" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.Doors">Doors</h4>
+  <div class="markdown level1 summary"><p>Doors leading to neighboring rooms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;LayoutDoorGrid2D&lt;TRoom&gt;&gt; Doors { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.LayoutDoorGrid2D-1.html">LayoutDoorGrid2D</a>&lt;TRoom&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_IsCorridor_" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.IsCorridor*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_IsCorridor" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.IsCorridor">IsCorridor</h4>
+  <div class="markdown level1 summary"><p>Whether it is a corridor room or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCorridor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_Outline_" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.Outline*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_Outline" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.Outline">Outline</h4>
+  <div class="markdown level1 summary"><p>Outline of the room.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PolygonGrid2D Outline { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.PolygonGrid2D.html">PolygonGrid2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_Outline_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The outline does not reflect the position of the room.
+To get a correctly positioned outline, the Position vector must be added to the Outline polygon.</p>
+<p>If there was no transformation applied to the room template (i.e. the Transformation property is equal to Identity),
+the outline polygon is equal to the RoomTemplate.Outline polygon. If a transformation was applied (i.e. Rotate 90),
+the outline polygon is equal to RoomTemplate.Outline.Transform(transformation).</p>
+</div>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_Position_" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.Position*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_Position" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.Position">Position</h4>
+  <div class="markdown level1 summary"><p>Position of the room.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2Int Position { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_Room_" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.Room*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_Room" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.Room">Room</h4>
+  <div class="markdown level1 summary"><p>Corresponding room from the level description.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TRoom Room { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TRoom</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_RoomDescription_" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.RoomDescription*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_RoomDescription" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.RoomDescription">RoomDescription</h4>
+  <div class="markdown level1 summary"><p>Description of the corresponding room.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoomDescriptionGrid2D RoomDescription { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.RoomDescriptionGrid2D.html">RoomDescriptionGrid2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_RoomTemplate_" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.RoomTemplate*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_RoomTemplate" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.RoomTemplate">RoomTemplate</h4>
+  <div class="markdown level1 summary"><p>Room template used for this room.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoomTemplateGrid2D RoomTemplate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.RoomTemplateGrid2D.html">RoomTemplateGrid2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_Transformation_" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.Transformation*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_Transformation" data-uid="Edgar.GraphBasedGenerator.Grid2D.LayoutRoomGrid2D`1.Transformation">Transformation</h4>
+  <div class="markdown level1 summary"><p>Transformation of the room template.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TransformationGrid2D Transformation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.TransformationGrid2D.html">TransformationGrid2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_LayoutRoomGrid2D_1_Transformation_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If there were multiple transformations allowed for the room template,
+this property contains the transformation that was used for this instance
+of the room template.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

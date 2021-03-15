@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class RoomShapesHandler&lt;TNode, TConfiguration&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class RoomShapesHandler&lt;TNode, TConfiguration&gt;
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.Legacy.Core.LayoutOperations.RoomShapesHandler`2">
+  
+  
+  <h1 id="Edgar_Legacy_Core_LayoutOperations_RoomShapesHandler_2" data-uid="Edgar.Legacy.Core.LayoutOperations.RoomShapesHandler`2" class="text-break">Class RoomShapesHandler&lt;TNode, TConfiguration&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Class responsible for returning available shapes for a node based on used repeat mode.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">RoomShapesHandler&lt;TNode, TConfiguration&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Edgar.Legacy.Core.LayoutOperations.Interfaces.IRoomShapesHandler-3.html">IRoomShapesHandler</a>&lt;<a class="xref" href="Edgar.Legacy.Core.Layouts.Interfaces.ILayout-2.html">ILayout</a>&lt;TNode, TConfiguration&gt;, TNode, <a class="xref" href="Edgar.Legacy.GeneralAlgorithms.DataStructures.Common.IntAlias-1.html">IntAlias</a>&lt;<a class="xref" href="Edgar.Geometry.PolygonGrid2D.html">PolygonGrid2D</a>&gt;&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.html">Edgar.Legacy.Core.LayoutOperations</a></h6>
+  <h6><strong>Assembly</strong>: Edgar.dll</h6>
+  <h5 id="Edgar_Legacy_Core_LayoutOperations_RoomShapesHandler_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RoomShapesHandler&lt;TNode, TConfiguration&gt; : Object, IRoomShapesHandler&lt;ILayout&lt;TNode, TConfiguration&gt;, TNode, IntAlias&lt;PolygonGrid2D&gt;&gt; where TConfiguration : IConfiguration&lt;IntAlias&lt;PolygonGrid2D&gt;, TNode&gt;, ISmartCloneable&lt;TConfiguration&gt;, new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TNode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TConfiguration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Edgar_Legacy_Core_LayoutOperations_RoomShapesHandler_2__ctor_" data-uid="Edgar.Legacy.Core.LayoutOperations.RoomShapesHandler`2.#ctor*"></a>
+  <h4 id="Edgar_Legacy_Core_LayoutOperations_RoomShapesHandler_2__ctor_Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces__0_Edgar_Legacy_GeneralAlgorithms_DataStructures_Common_IntAlias_Edgar_Geometry_PolygonGrid2D___1_Edgar_Legacy_Core_ConfigurationSpaces_ConfigurationSpace__Edgar_Legacy_GeneralAlgorithms_DataStructures_Common_TwoWayDictionary_Edgar_Legacy_Core_MapDescriptions_RoomTemplateInstance_Edgar_Legacy_GeneralAlgorithms_DataStructures_Common_IntAlias_Edgar_Geometry_PolygonGrid2D___Edgar_Legacy_Core_MapDescriptions_Interfaces_IMapDescription__0__System_Nullable_Edgar_GraphBasedGenerator_Common_RoomTemplateRepeatMode__" data-uid="Edgar.Legacy.Core.LayoutOperations.RoomShapesHandler`2.#ctor(Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces{`0,Edgar.Legacy.GeneralAlgorithms.DataStructures.Common.IntAlias{Edgar.Geometry.PolygonGrid2D},`1,Edgar.Legacy.Core.ConfigurationSpaces.ConfigurationSpace},Edgar.Legacy.GeneralAlgorithms.DataStructures.Common.TwoWayDictionary{Edgar.Legacy.Core.MapDescriptions.RoomTemplateInstance,Edgar.Legacy.GeneralAlgorithms.DataStructures.Common.IntAlias{Edgar.Geometry.PolygonGrid2D}},Edgar.Legacy.Core.MapDescriptions.Interfaces.IMapDescription{`0},System.Nullable{Edgar.GraphBasedGenerator.Common.RoomTemplateRepeatMode})">RoomShapesHandler(IConfigurationSpaces&lt;TNode, IntAlias&lt;PolygonGrid2D&gt;, TConfiguration, ConfigurationSpace&gt;, TwoWayDictionary&lt;RoomTemplateInstance, IntAlias&lt;PolygonGrid2D&gt;&gt;, IMapDescription&lt;TNode&gt;, Nullable&lt;RoomTemplateRepeatMode&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoomShapesHandler(IConfigurationSpaces&lt;TNode, IntAlias&lt;PolygonGrid2D&gt;, TConfiguration, ConfigurationSpace&gt; configurationSpaces, TwoWayDictionary&lt;RoomTemplateInstance, IntAlias&lt;PolygonGrid2D&gt;&gt; intAliasMapping, IMapDescription&lt;TNode&gt; mapDescription, Nullable&lt;RoomTemplateRepeatMode&gt; repeatModeOverride = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces-4.html">IConfigurationSpaces</a>&lt;TNode, <a class="xref" href="Edgar.Legacy.GeneralAlgorithms.DataStructures.Common.IntAlias-1.html">IntAlias</a>&lt;<a class="xref" href="Edgar.Geometry.PolygonGrid2D.html">PolygonGrid2D</a>&gt;, TConfiguration, <a class="xref" href="Edgar.Legacy.Core.ConfigurationSpaces.ConfigurationSpace.html">ConfigurationSpace</a>&gt;</td>
+        <td><span class="parametername">configurationSpaces</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.GeneralAlgorithms.DataStructures.Common.TwoWayDictionary-2.html">TwoWayDictionary</a>&lt;<a class="xref" href="Edgar.Legacy.Core.MapDescriptions.RoomTemplateInstance.html">RoomTemplateInstance</a>, <a class="xref" href="Edgar.Legacy.GeneralAlgorithms.DataStructures.Common.IntAlias-1.html">IntAlias</a>&lt;<a class="xref" href="Edgar.Geometry.PolygonGrid2D.html">PolygonGrid2D</a>&gt;&gt;</td>
+        <td><span class="parametername">intAliasMapping</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Core.MapDescriptions.Interfaces.IMapDescription-1.html">IMapDescription</a>&lt;TNode&gt;</td>
+        <td><span class="parametername">mapDescription</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Edgar.GraphBasedGenerator.Common.RoomTemplateRepeatMode.html">RoomTemplateRepeatMode</a>&gt;</td>
+        <td><span class="parametername">repeatModeOverride</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_Legacy_Core_LayoutOperations_RoomShapesHandler_2_CanPerturbShapeDoNotUse_" data-uid="Edgar.Legacy.Core.LayoutOperations.RoomShapesHandler`2.CanPerturbShapeDoNotUse*"></a>
+  <h4 id="Edgar_Legacy_Core_LayoutOperations_RoomShapesHandler_2_CanPerturbShapeDoNotUse__0_" data-uid="Edgar.Legacy.Core.LayoutOperations.RoomShapesHandler`2.CanPerturbShapeDoNotUse(`0)">CanPerturbShapeDoNotUse(TNode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanPerturbShapeDoNotUse(TNode node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TNode</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Core_LayoutOperations_RoomShapesHandler_2_GetPossibleShapesForNode_" data-uid="Edgar.Legacy.Core.LayoutOperations.RoomShapesHandler`2.GetPossibleShapesForNode*"></a>
+  <h4 id="Edgar_Legacy_Core_LayoutOperations_RoomShapesHandler_2_GetPossibleShapesForNode_Edgar_Legacy_Core_Layouts_Interfaces_ILayout__0__1___0_System_Boolean_" data-uid="Edgar.Legacy.Core.LayoutOperations.RoomShapesHandler`2.GetPossibleShapesForNode(Edgar.Legacy.Core.Layouts.Interfaces.ILayout{`0,`1},`0,System.Boolean)">GetPossibleShapesForNode(ILayout&lt;TNode, TConfiguration&gt;, TNode, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets all the possible shapes based on repeat modes.
+If zero shapes are found and tryToFixEmpty is set to true, we try to lower the requirements and e.g. use
+only the NoImmediate mode instead of the NoRepeat mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;IntAlias&lt;PolygonGrid2D&gt;&gt; GetPossibleShapesForNode(ILayout&lt;TNode, TConfiguration&gt; layout, TNode node, bool tryToFixEmpty = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Core.Layouts.Interfaces.ILayout-2.html">ILayout</a>&lt;TNode, TConfiguration&gt;</td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TNode</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">tryToFixEmpty</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Edgar.Legacy.GeneralAlgorithms.DataStructures.Common.IntAlias-1.html">IntAlias</a>&lt;<a class="xref" href="Edgar.Geometry.PolygonGrid2D.html">PolygonGrid2D</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Core_LayoutOperations_RoomShapesHandler_2_GetRandomShapeWithoutConstraintsDoNotUse_" data-uid="Edgar.Legacy.Core.LayoutOperations.RoomShapesHandler`2.GetRandomShapeWithoutConstraintsDoNotUse*"></a>
+  <h4 id="Edgar_Legacy_Core_LayoutOperations_RoomShapesHandler_2_GetRandomShapeWithoutConstraintsDoNotUse__0_" data-uid="Edgar.Legacy.Core.LayoutOperations.RoomShapesHandler`2.GetRandomShapeWithoutConstraintsDoNotUse(`0)">GetRandomShapeWithoutConstraintsDoNotUse(TNode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntAlias&lt;PolygonGrid2D&gt; GetRandomShapeWithoutConstraintsDoNotUse(TNode node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TNode</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.GeneralAlgorithms.DataStructures.Common.IntAlias-1.html">IntAlias</a>&lt;<a class="xref" href="Edgar.Geometry.PolygonGrid2D.html">PolygonGrid2D</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.Interfaces.IRoomShapesHandler-3.html">IRoomShapesHandler&lt;TLayout, TNode, TShape&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

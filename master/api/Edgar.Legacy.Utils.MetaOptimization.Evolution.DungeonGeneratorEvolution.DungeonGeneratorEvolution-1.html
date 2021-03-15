@@ -1,0 +1,379 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DungeonGeneratorEvolution&lt;TNode&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DungeonGeneratorEvolution&lt;TNode&gt;
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.DungeonGeneratorEvolution`1">
+  
+  
+  <h1 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_DungeonGeneratorEvolution_DungeonGeneratorEvolution_1" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.DungeonGeneratorEvolution`1" class="text-break">Class DungeonGeneratorEvolution&lt;TNode&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution-2.html">ConfigurationEvolution</a>&lt;<a class="xref" href="Edgar.Legacy.Core.LayoutGenerators.DungeonGenerator.DungeonGeneratorConfiguration-1.html">DungeonGeneratorConfiguration</a>&lt;TNode&gt;, <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.Individual-1.html">Individual</a>&lt;TNode&gt;&gt;</div>
+    <div class="level2"><span class="xref">DungeonGeneratorEvolution&lt;TNode&gt;</span></div>
+      <div class="level3"><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.SimpleDungeonGeneratorEvolution.SimpleDungeonGeneratorEvolution-1.html">SimpleDungeonGeneratorEvolution&lt;TNode&gt;</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution-2.html#Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_Options">ConfigurationEvolution&lt;DungeonGeneratorConfiguration&lt;TNode&gt;, Individual&lt;TNode&gt;&gt;.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution-2.html#Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_Logger">ConfigurationEvolution&lt;DungeonGeneratorConfiguration&lt;TNode&gt;, Individual&lt;TNode&gt;&gt;.Logger</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution-2.html#Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_ResultsDirectory">ConfigurationEvolution&lt;DungeonGeneratorConfiguration&lt;TNode&gt;, Individual&lt;TNode&gt;&gt;.ResultsDirectory</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution-2.html#Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_InitialIndividual">ConfigurationEvolution&lt;DungeonGeneratorConfiguration&lt;TNode&gt;, Individual&lt;TNode&gt;&gt;.InitialIndividual</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution-2.html#Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_Analyzers">ConfigurationEvolution&lt;DungeonGeneratorConfiguration&lt;TNode&gt;, Individual&lt;TNode&gt;&gt;.Analyzers</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution-2.html#Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_Evolve__0_">ConfigurationEvolution&lt;DungeonGeneratorConfiguration&lt;TNode&gt;, Individual&lt;TNode&gt;&gt;.Evolve(DungeonGeneratorConfiguration&lt;TNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution-2.html#Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_ComputeNextGeneration_Edgar_Legacy_Utils_MetaOptimization_Evolution_Population__1__">ConfigurationEvolution&lt;DungeonGeneratorConfiguration&lt;TNode&gt;, Individual&lt;TNode&gt;&gt;.ComputeNextGeneration(Population&lt;Individual&lt;TNode&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution-2.html#Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_SelectBestIndividuals_Edgar_Legacy_Utils_MetaOptimization_Evolution_Population__1__Edgar_Legacy_Utils_MetaOptimization_Evolution_Population__1__">ConfigurationEvolution&lt;DungeonGeneratorConfiguration&lt;TNode&gt;, Individual&lt;TNode&gt;&gt;.SelectBestIndividuals(Population&lt;Individual&lt;TNode&gt;&gt;, Population&lt;Individual&lt;TNode&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution-2.html#Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_GetMutations__1_">ConfigurationEvolution&lt;DungeonGeneratorConfiguration&lt;TNode&gt;, Individual&lt;TNode&gt;&gt;.GetMutations(Individual&lt;TNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution-2.html#Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_EvaluatePopulation_Edgar_Legacy_Utils_MetaOptimization_Evolution_Population__1__">ConfigurationEvolution&lt;DungeonGeneratorConfiguration&lt;TNode&gt;, Individual&lt;TNode&gt;&gt;.EvaluatePopulation(Population&lt;Individual&lt;TNode&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution-2.html#Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_EvaluateIndividual__1_">ConfigurationEvolution&lt;DungeonGeneratorConfiguration&lt;TNode&gt;, Individual&lt;TNode&gt;&gt;.EvaluateIndividual(Individual&lt;TNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution-2.html#Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_CreateInitialIndividual_System_Int32__0_">ConfigurationEvolution&lt;DungeonGeneratorConfiguration&lt;TNode&gt;, Individual&lt;TNode&gt;&gt;.CreateInitialIndividual(Int32, DungeonGeneratorConfiguration&lt;TNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution-2.html#Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_CreateIndividual_System_Int32__1_Edgar_Legacy_Utils_MetaOptimization_Mutations_IMutation__0__">ConfigurationEvolution&lt;DungeonGeneratorConfiguration&lt;TNode&gt;, Individual&lt;TNode&gt;&gt;.CreateIndividual(Int32, Individual&lt;TNode&gt;, IMutation&lt;DungeonGeneratorConfiguration&lt;TNode&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution-2.html#Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_OnEvolutionStarted">ConfigurationEvolution&lt;DungeonGeneratorConfiguration&lt;TNode&gt;, Individual&lt;TNode&gt;&gt;.OnEvolutionStarted</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.html">Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution</a></h6>
+  <h6><strong>Assembly</strong>: Edgar.dll</h6>
+  <h5 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_DungeonGeneratorEvolution_DungeonGeneratorEvolution_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DungeonGeneratorEvolution&lt;TNode&gt; : ConfigurationEvolution&lt;DungeonGeneratorConfiguration&lt;TNode&gt;, Individual&lt;TNode&gt;&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TNode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Edgar_Legacy_Utils_MetaOptimization_Evolution_DungeonGeneratorEvolution_DungeonGeneratorEvolution_1__ctor_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.DungeonGeneratorEvolution`1.#ctor*"></a>
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_DungeonGeneratorEvolution_DungeonGeneratorEvolution_1__ctor_Edgar_Legacy_Core_MapDescriptions_Interfaces_IMapDescription__0__System_Collections_Generic_List_Edgar_Legacy_Utils_MetaOptimization_Mutations_IPerformanceAnalyzer_Edgar_Legacy_Core_LayoutGenerators_DungeonGenerator_DungeonGeneratorConfiguration__0__Edgar_Legacy_Utils_MetaOptimization_Evolution_DungeonGeneratorEvolution_Individual__0____Edgar_Legacy_Utils_MetaOptimization_Evolution_EvolutionOptions_System_String_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.DungeonGeneratorEvolution`1.#ctor(Edgar.Legacy.Core.MapDescriptions.Interfaces.IMapDescription{`0},System.Collections.Generic.List{Edgar.Legacy.Utils.MetaOptimization.Mutations.IPerformanceAnalyzer{Edgar.Legacy.Core.LayoutGenerators.DungeonGenerator.DungeonGeneratorConfiguration{`0},Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.Individual{`0}}},Edgar.Legacy.Utils.MetaOptimization.Evolution.EvolutionOptions,System.String)">DungeonGeneratorEvolution(IMapDescription&lt;TNode&gt;, List&lt;IPerformanceAnalyzer&lt;DungeonGeneratorConfiguration&lt;TNode&gt;, Individual&lt;TNode&gt;&gt;&gt;, EvolutionOptions, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DungeonGeneratorEvolution(IMapDescription&lt;TNode&gt; mapDescription, List&lt;IPerformanceAnalyzer&lt;DungeonGeneratorConfiguration&lt;TNode&gt;, Individual&lt;TNode&gt;&gt;&gt; analyzers, EvolutionOptions options, string resultsDirectory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Core.MapDescriptions.Interfaces.IMapDescription-1.html">IMapDescription</a>&lt;TNode&gt;</td>
+        <td><span class="parametername">mapDescription</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Mutations.IPerformanceAnalyzer-2.html">IPerformanceAnalyzer</a>&lt;<a class="xref" href="Edgar.Legacy.Core.LayoutGenerators.DungeonGenerator.DungeonGeneratorConfiguration-1.html">DungeonGeneratorConfiguration</a>&lt;TNode&gt;, <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.Individual-1.html">Individual</a>&lt;TNode&gt;&gt;&gt;</td>
+        <td><span class="parametername">analyzers</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.EvolutionOptions.html">EvolutionOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resultsDirectory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_Legacy_Utils_MetaOptimization_Evolution_DungeonGeneratorEvolution_DungeonGeneratorEvolution_1_CreateIndividual_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.DungeonGeneratorEvolution`1.CreateIndividual*"></a>
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_DungeonGeneratorEvolution_DungeonGeneratorEvolution_1_CreateIndividual_System_Int32_Edgar_Legacy_Utils_MetaOptimization_Evolution_DungeonGeneratorEvolution_Individual__0__Edgar_Legacy_Utils_MetaOptimization_Mutations_IMutation_Edgar_Legacy_Core_LayoutGenerators_DungeonGenerator_DungeonGeneratorConfiguration__0___" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.DungeonGeneratorEvolution`1.CreateIndividual(System.Int32,Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.Individual{`0},Edgar.Legacy.Utils.MetaOptimization.Mutations.IMutation{Edgar.Legacy.Core.LayoutGenerators.DungeonGenerator.DungeonGeneratorConfiguration{`0}})">CreateIndividual(Int32, Individual&lt;TNode&gt;, IMutation&lt;DungeonGeneratorConfiguration&lt;TNode&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Individual&lt;TNode&gt; CreateIndividual(int id, Individual&lt;TNode&gt; parent, IMutation&lt;DungeonGeneratorConfiguration&lt;TNode&gt;&gt; mutation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.Individual-1.html">Individual</a>&lt;TNode&gt;</td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Mutations.IMutation-1.html">IMutation</a>&lt;<a class="xref" href="Edgar.Legacy.Core.LayoutGenerators.DungeonGenerator.DungeonGeneratorConfiguration-1.html">DungeonGeneratorConfiguration</a>&lt;TNode&gt;&gt;</td>
+        <td><span class="parametername">mutation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.Individual-1.html">Individual</a>&lt;TNode&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution&lt;Edgar.Legacy.Core.LayoutGenerators.DungeonGenerator.DungeonGeneratorConfiguration&lt;TNode&gt;, Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.Individual&lt;TNode&gt;&gt;.CreateIndividual(System.Int32, Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.Individual&lt;TNode&gt;, Edgar.Legacy.Utils.MetaOptimization.Mutations.IMutation&lt;Edgar.Legacy.Core.LayoutGenerators.DungeonGenerator.DungeonGeneratorConfiguration&lt;TNode&gt;&gt;)</span></div>
+  
+  
+  <a id="Edgar_Legacy_Utils_MetaOptimization_Evolution_DungeonGeneratorEvolution_DungeonGeneratorEvolution_1_CreateInitialIndividual_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.DungeonGeneratorEvolution`1.CreateInitialIndividual*"></a>
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_DungeonGeneratorEvolution_DungeonGeneratorEvolution_1_CreateInitialIndividual_System_Int32_Edgar_Legacy_Core_LayoutGenerators_DungeonGenerator_DungeonGeneratorConfiguration__0__" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.DungeonGeneratorEvolution`1.CreateInitialIndividual(System.Int32,Edgar.Legacy.Core.LayoutGenerators.DungeonGenerator.DungeonGeneratorConfiguration{`0})">CreateInitialIndividual(Int32, DungeonGeneratorConfiguration&lt;TNode&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Individual&lt;TNode&gt; CreateInitialIndividual(int id, DungeonGeneratorConfiguration&lt;TNode&gt; configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Core.LayoutGenerators.DungeonGenerator.DungeonGeneratorConfiguration-1.html">DungeonGeneratorConfiguration</a>&lt;TNode&gt;</td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.Individual-1.html">Individual</a>&lt;TNode&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution&lt;Edgar.Legacy.Core.LayoutGenerators.DungeonGenerator.DungeonGeneratorConfiguration&lt;TNode&gt;, Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.Individual&lt;TNode&gt;&gt;.CreateInitialIndividual(System.Int32, Edgar.Legacy.Core.LayoutGenerators.DungeonGenerator.DungeonGeneratorConfiguration&lt;TNode&gt;)</span></div>
+  
+  
+  <a id="Edgar_Legacy_Utils_MetaOptimization_Evolution_DungeonGeneratorEvolution_DungeonGeneratorEvolution_1_EvaluateIndividual_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.DungeonGeneratorEvolution`1.EvaluateIndividual*"></a>
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_DungeonGeneratorEvolution_DungeonGeneratorEvolution_1_EvaluateIndividual_Edgar_Legacy_Utils_MetaOptimization_Evolution_DungeonGeneratorEvolution_Individual__0__" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.DungeonGeneratorEvolution`1.EvaluateIndividual(Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.Individual{`0})">EvaluateIndividual(Individual&lt;TNode&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Individual&lt;TNode&gt; EvaluateIndividual(Individual&lt;TNode&gt; individual)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.Individual-1.html">Individual</a>&lt;TNode&gt;</td>
+        <td><span class="parametername">individual</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.Individual-1.html">Individual</a>&lt;TNode&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution&lt;Edgar.Legacy.Core.LayoutGenerators.DungeonGenerator.DungeonGeneratorConfiguration&lt;TNode&gt;, Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.Individual&lt;TNode&gt;&gt;.EvaluateIndividual(Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.Individual&lt;TNode&gt;)</span></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

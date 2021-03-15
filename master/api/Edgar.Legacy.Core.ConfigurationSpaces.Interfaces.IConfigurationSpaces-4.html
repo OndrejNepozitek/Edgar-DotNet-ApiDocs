@@ -1,0 +1,666 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IConfigurationSpaces&lt;TNode, TShape, TConfiguration, TConfigurationSpace&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IConfigurationSpaces&lt;TNode, TShape, TConfiguration, TConfigurationSpace&gt;
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4">
+  
+  
+  <h1 id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4" class="text-break">Interface IConfigurationSpaces&lt;TNode, TShape, TConfiguration, TConfigurationSpace&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a data structure holding configuration spaces.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.html">Edgar.Legacy.Core.ConfigurationSpaces.Interfaces</a></h6>
+  <h6><strong>Assembly</strong>: Edgar.dll</h6>
+  <h5 id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IConfigurationSpaces&lt;in TNode, TShape, TConfiguration, out TConfigurationSpace&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TNode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TShape</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TConfiguration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TConfigurationSpace</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_CanPerturbShape_" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.CanPerturbShape*"></a>
+  <h4 id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_CanPerturbShape__0_" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.CanPerturbShape(`0)">CanPerturbShape(TNode)</h4>
+  <div class="markdown level1 summary"><p>Checks whether a node can be shape perturbed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanPerturbShape(TNode node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TNode</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetAllShapes_" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetAllShapes*"></a>
+  <h4 id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetAllShapes" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetAllShapes">GetAllShapes()</h4>
+  <div class="markdown level1 summary"><p>Gets all shapes that can be used for at least one node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;TShape&gt; GetAllShapes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;TShape&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetConfigurationSpace_" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetConfigurationSpace*"></a>
+  <h4 id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetConfigurationSpace__1__1_" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetConfigurationSpace(`1,`1)">GetConfigurationSpace(TShape, TShape)</h4>
+  <div class="markdown level1 summary"><p>Gets a configuration space for two shapes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TConfigurationSpace GetConfigurationSpace(TShape movingPolygon, TShape fixedPolygon)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TShape</span></td>
+        <td><span class="parametername">movingPolygon</span></td>
+        <td><p>A polygon that can be moved through the returned configuration space.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">TShape</span></td>
+        <td><span class="parametername">fixedPolygon</span></td>
+        <td><p>A polygon that stays fixed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfigurationSpace</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetConfigurationSpace_" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetConfigurationSpace*"></a>
+  <h4 id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetConfigurationSpace__2__2_" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetConfigurationSpace(`2,`2)">GetConfigurationSpace(TConfiguration, TConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Gets a configuration space for two configurations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TConfigurationSpace GetConfigurationSpace(TConfiguration configuration1, TConfiguration configuration2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfiguration</span></td>
+        <td><span class="parametername">configuration1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TConfiguration</span></td>
+        <td><span class="parametername">configuration2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfigurationSpace</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetMaximumIntersection_" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetMaximumIntersection*"></a>
+  <h4 id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetMaximumIntersection__2_System_Collections_Generic_IList__2__" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetMaximumIntersection(`2,System.Collections.Generic.IList{`2})">GetMaximumIntersection(TConfiguration, IList&lt;TConfiguration&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets a maximum intersection of configuration spaces of given
+configurations with respect to the main configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IList&lt;OrthogonalLineGrid2D&gt; GetMaximumIntersection(TConfiguration mainConfiguration, IList&lt;TConfiguration&gt; configurations)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfiguration</span></td>
+        <td><span class="parametername">mainConfiguration</span></td>
+        <td><p>Configuration of a node for which we look for a new position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TConfiguration&gt;</td>
+        <td><span class="parametername">configurations</span></td>
+        <td><p>Configurations that we try to satisfy when looking for a new position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Edgar.Geometry.OrthogonalLineGrid2D.html">OrthogonalLineGrid2D</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetMaximumIntersection_" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetMaximumIntersection*"></a>
+  <h4 id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetMaximumIntersection__2_System_Collections_Generic_IList__2__System_Int32__" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetMaximumIntersection(`2,System.Collections.Generic.IList{`2},System.Int32@)">GetMaximumIntersection(TConfiguration, IList&lt;TConfiguration&gt;, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a maximum intersection of configuration spaces of given
+configurations with respect to the main configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IList&lt;OrthogonalLineGrid2D&gt; GetMaximumIntersection(TConfiguration mainConfiguration, IList&lt;TConfiguration&gt; configurations, out int configurationsSatisfied)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfiguration</span></td>
+        <td><span class="parametername">mainConfiguration</span></td>
+        <td><p>Configuration of a node for which we look for a new position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TConfiguration&gt;</td>
+        <td><span class="parametername">configurations</span></td>
+        <td><p>Configurations that we try to satisfy when looking for a new position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">configurationsSatisfied</span></td>
+        <td><p>How many of given configurations were satisfied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Edgar.Geometry.OrthogonalLineGrid2D.html">OrthogonalLineGrid2D</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetRandomIntersectionPoint_" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetRandomIntersectionPoint*"></a>
+  <h4 id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetRandomIntersectionPoint__2_System_Collections_Generic_IList__2__" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetRandomIntersectionPoint(`2,System.Collections.Generic.IList{`2})">GetRandomIntersectionPoint(TConfiguration, IList&lt;TConfiguration&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets a random point in the maximum intersection of configuration spaces
+of given configurations with respect to the main configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector2Int GetRandomIntersectionPoint(TConfiguration mainConfiguration, IList&lt;TConfiguration&gt; configurations)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfiguration</span></td>
+        <td><span class="parametername">mainConfiguration</span></td>
+        <td><p>Configuration of a node for which we look for a new position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TConfiguration&gt;</td>
+        <td><span class="parametername">configurations</span></td>
+        <td><p>Configurations that we try to satisfy when looking for a new position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetRandomIntersectionPoint_" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetRandomIntersectionPoint*"></a>
+  <h4 id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetRandomIntersectionPoint__2_System_Collections_Generic_IList__2__System_Int32__" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetRandomIntersectionPoint(`2,System.Collections.Generic.IList{`2},System.Int32@)">GetRandomIntersectionPoint(TConfiguration, IList&lt;TConfiguration&gt;, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a random point in the maximum intersection of configuration spaces
+of given configurations with respect to the main configuration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Vector2Int GetRandomIntersectionPoint(TConfiguration mainConfiguration, IList&lt;TConfiguration&gt; configurations, out int configurationsSatisfied)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfiguration</span></td>
+        <td><span class="parametername">mainConfiguration</span></td>
+        <td><p>Configuration of a node for which we look for a new position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TConfiguration&gt;</td>
+        <td><span class="parametername">configurations</span></td>
+        <td><p>Configurations that we try to satisfy when looking for a new position.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">configurationsSatisfied</span></td>
+        <td><p>How many of given configurations were satisfied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetRandomShape_" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetRandomShape*"></a>
+  <h4 id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetRandomShape__0_" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetRandomShape(`0)">GetRandomShape(TNode)</h4>
+  <div class="markdown level1 summary"><p>Gets a random shape for a given node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">TShape GetRandomShape(TNode node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TNode</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TShape</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetShapesForNode_" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetShapesForNode*"></a>
+  <h4 id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_GetShapesForNode__0_" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.GetShapesForNode(`0)">GetShapesForNode(TNode)</h4>
+  <div class="markdown level1 summary"><p>Gets all possible shapes for a given node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyCollection&lt;TShape&gt; GetShapesForNode(TNode node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TNode</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;TShape&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_HaveValidPosition_" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.HaveValidPosition*"></a>
+  <h4 id="Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces_4_HaveValidPosition__2__2_" data-uid="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces`4.HaveValidPosition(`2,`2)">HaveValidPosition(TConfiguration, TConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Checks if two configurations are valid with respect to each other.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HaveValidPosition(TConfiguration configuration1, TConfiguration configuration2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfiguration</span></td>
+        <td><span class="parametername">configuration1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TConfiguration</span></td>
+        <td><span class="parametername">configuration2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
