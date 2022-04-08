@@ -1,0 +1,395 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IGraph&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IGraph&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.Graphs.IGraph`1">
+  
+  
+  <h1 id="Edgar_Graphs_IGraph_1" data-uid="Edgar.Graphs.IGraph`1" class="text-break">Interface IGraph&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Interface describing a generic graph.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.Graphs.html">Edgar.Graphs</a></h6>
+  <h6><strong>Assembly</strong>: Edgar.dll</h6>
+  <h5 id="Edgar_Graphs_IGraph_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IGraph&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Edgar_Graphs_IGraph_1_Edges_" data-uid="Edgar.Graphs.IGraph`1.Edges*"></a>
+  <h4 id="Edgar_Graphs_IGraph_1_Edges" data-uid="Edgar.Graphs.IGraph`1.Edges">Edges</h4>
+  <div class="markdown level1 summary"><p>Gets all edges of the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;IEdge&lt;T&gt;&gt; Edges { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="Edgar.Graphs.IEdge-1.html">IEdge</a>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Graphs_IGraph_1_IsDirected_" data-uid="Edgar.Graphs.IGraph`1.IsDirected*"></a>
+  <h4 id="Edgar_Graphs_IGraph_1_IsDirected" data-uid="Edgar.Graphs.IGraph`1.IsDirected">IsDirected</h4>
+  <div class="markdown level1 summary"><p>Checks if the graph is directed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsDirected { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Graphs_IGraph_1_Vertices_" data-uid="Edgar.Graphs.IGraph`1.Vertices*"></a>
+  <h4 id="Edgar_Graphs_IGraph_1_Vertices" data-uid="Edgar.Graphs.IGraph`1.Vertices">Vertices</h4>
+  <div class="markdown level1 summary"><p>Gets all vertices of the graph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;T&gt; Vertices { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Graphs_IGraph_1_VerticesCount_" data-uid="Edgar.Graphs.IGraph`1.VerticesCount*"></a>
+  <h4 id="Edgar_Graphs_IGraph_1_VerticesCount" data-uid="Edgar.Graphs.IGraph`1.VerticesCount">VerticesCount</h4>
+  <div class="markdown level1 summary"><p>Gets the total number of vertices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int VerticesCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_Graphs_IGraph_1_AddEdge_" data-uid="Edgar.Graphs.IGraph`1.AddEdge*"></a>
+  <h4 id="Edgar_Graphs_IGraph_1_AddEdge__0__0_" data-uid="Edgar.Graphs.IGraph`1.AddEdge(`0,`0)">AddEdge(T, T)</h4>
+  <div class="markdown level1 summary"><p>Adds an edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddEdge(T from, T to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Graphs_IGraph_1_AddVertex_" data-uid="Edgar.Graphs.IGraph`1.AddVertex*"></a>
+  <h4 id="Edgar_Graphs_IGraph_1_AddVertex__0_" data-uid="Edgar.Graphs.IGraph`1.AddVertex(`0)">AddVertex(T)</h4>
+  <div class="markdown level1 summary"><p>Adds a vertex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddVertex(T vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">vertex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Graphs_IGraph_1_GetNeighbours_" data-uid="Edgar.Graphs.IGraph`1.GetNeighbours*"></a>
+  <h4 id="Edgar_Graphs_IGraph_1_GetNeighbours__0_" data-uid="Edgar.Graphs.IGraph`1.GetNeighbours(`0)">GetNeighbours(T)</h4>
+  <div class="markdown level1 summary"><p>Gets all neighbours of a given vertex.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerable&lt;T&gt; GetNeighbours(T vertex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">vertex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Graphs_IGraph_1_HasEdge_" data-uid="Edgar.Graphs.IGraph`1.HasEdge*"></a>
+  <h4 id="Edgar_Graphs_IGraph_1_HasEdge__0__0_" data-uid="Edgar.Graphs.IGraph`1.HasEdge(`0,`0)">HasEdge(T, T)</h4>
+  <div class="markdown level1 summary"><p>Checks whether there exists a given edge.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool HasEdge(T from, T to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

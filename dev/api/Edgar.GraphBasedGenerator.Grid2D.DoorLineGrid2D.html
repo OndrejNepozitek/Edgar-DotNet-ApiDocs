@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DoorLineGrid2D
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DoorLineGrid2D
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D">
+  
+  
+  <h1 id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D" class="text-break">Class DoorLineGrid2D
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a door line.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DoorLineGrid2D</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.html">DoorLineGrid2D</a>&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.html">Edgar.GraphBasedGenerator.Grid2D</a></h6>
+  <h6><strong>Assembly</strong>: Edgar.dll</h6>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class DoorLineGrid2D : ValueType, IEquatable&lt;DoorLineGrid2D&gt;</code></pre>
+  </div>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The difference between this class and the <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.DoorGrid2D.html">DoorGrid2D</a> class is that a single instance of this class
+can represent multiple instances of the <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.DoorGrid2D.html">DoorGrid2D</a> class.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D__ctor_" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.#ctor*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D__ctor_Edgar_Geometry_OrthogonalLineGrid2D_System_Int32_Edgar_GraphBasedGenerator_Common_Doors_IDoorSocket_Edgar_GraphBasedGenerator_Common_Doors_DoorType_" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.#ctor(Edgar.Geometry.OrthogonalLineGrid2D,System.Int32,Edgar.GraphBasedGenerator.Common.Doors.IDoorSocket,Edgar.GraphBasedGenerator.Common.Doors.DoorType)">DoorLineGrid2D(OrthogonalLineGrid2D, Int32, IDoorSocket, DoorType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoorLineGrid2D(OrthogonalLineGrid2D line, int length, IDoorSocket doorSocket, DoorType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.OrthogonalLineGrid2D.html">OrthogonalLineGrid2D</a></td>
+        <td><span class="parametername">line</span></td>
+        <td><p>See the <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.html#Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_Line">Line</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>See the <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.html#Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_Length">Length</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Common.Doors.IDoorSocket.html">IDoorSocket</a></td>
+        <td><span class="parametername">doorSocket</span></td>
+        <td><p>See the <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.html#Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_DoorSocket">DoorSocket</a> property.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Common.Doors.DoorType.html">DoorType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_DoorSocket_" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.DoorSocket*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_DoorSocket" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.DoorSocket">DoorSocket</h4>
+  <div class="markdown level1 summary"><p>Door socket.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDoorSocket DoorSocket { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Common.Doors.IDoorSocket.html">IDoorSocket</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_Length_" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.Length*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_Length" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.Length">Length</h4>
+  <div class="markdown level1 summary"><p>Length of doors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_Line_" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.Line*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_Line" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.Line">Line</h4>
+  <div class="markdown level1 summary"><p>Set of points where doors can start.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OrthogonalLineGrid2D Line { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.OrthogonalLineGrid2D.html">OrthogonalLineGrid2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_Type_" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.Type*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_Type" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.Type">Type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DoorType Type { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Common.Doors.DoorType.html">DoorType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_Equals_" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.Equals*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_Equals_Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.Equals(Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D)">Equals(DoorLineGrid2D)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(DoorLineGrid2D other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.html">DoorLineGrid2D</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_Equals_" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.Equals*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_Equals_System_Object_" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_GetHashCode_" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.GetHashCode*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_DoorLineGrid2D_GetHashCode" data-uid="Edgar.GraphBasedGenerator.Grid2D.DoorLineGrid2D.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

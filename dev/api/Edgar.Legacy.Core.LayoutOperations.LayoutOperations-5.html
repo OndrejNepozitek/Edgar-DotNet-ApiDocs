@@ -1,0 +1,803 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer, TEnergyData&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer, TEnergyData&gt;
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5">
+  
+  
+  <h1 id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5" class="text-break">Class LayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer, TEnergyData&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Layout operations that compute energy based on given constraints.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html">AbstractLayoutOperations</a>&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;</div>
+    <div class="level2"><span class="xref">LayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer, TEnergyData&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Edgar.Legacy.Core.LayoutOperations.Interfaces.IChainBasedLayoutOperations-2.html">IChainBasedLayoutOperations</a>&lt;TLayout, TNode&gt;</div>
+    <div><a class="xref" href="Edgar.Legacy.Core.LayoutOperations.Interfaces.ILayoutOperations-2.html">ILayoutOperations</a>&lt;TLayout, TNode&gt;</div>
+    <div><a class="xref" href="Edgar.Legacy.Utils.Interfaces.IRandomInjectable.html">IRandomInjectable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_ConfigurationSpaces">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.ConfigurationSpaces</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_Random">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.Random</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_ShapePerturbChance">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.ShapePerturbChance</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_DifferenceFromAverageScale">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.DifferenceFromAverageScale</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_AverageSize">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.AverageSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_MapDescription">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.MapDescription</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_StageOneGraph">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.StageOneGraph</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_RoomShapesHandler">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.RoomShapesHandler</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_InjectRandomGenerator_System_Random_">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.InjectRandomGenerator(Random)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_PerturbShape__0__1_System_Boolean_">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.PerturbShape(TLayout, TNode, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_PerturbShape__0_System_Collections_Generic_IList__1__System_Boolean_">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.PerturbShape(TLayout, IList&lt;TNode&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_PerturbPosition__0__1_System_Boolean_">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.PerturbPosition(TLayout, TNode, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_PerturbPosition__0_System_Collections_Generic_IList__1__System_Boolean_">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.PerturbPosition(TLayout, IList&lt;TNode&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_PerturbLayout__0_System_Collections_Generic_IList__1__System_Boolean_">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.PerturbLayout(TLayout, IList&lt;TNode&gt;, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_AddChain__0_System_Collections_Generic_IList__1__System_Boolean_System_Int32__">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.AddChain(TLayout, IList&lt;TNode&gt;, Boolean, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_TryCompleteChain__0_System_Collections_Generic_IList__1__">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.TryCompleteChain(TLayout, IList&lt;TNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_AreDifferentEnough__0__0_">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.AreDifferentEnough(TLayout, TLayout)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_AreDifferentEnough__0__0_System_Collections_Generic_IList__1__">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.AreDifferentEnough(TLayout, TLayout, IList&lt;TNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_IsLayoutValid__0_">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.IsLayoutValid(TLayout)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_IsLayoutValid__0_System_Collections_Generic_IList__1__">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.IsLayoutValid(TLayout, IList&lt;TNode&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_GetEnergy__0_">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.GetEnergy(TLayout)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_UpdateLayout__0_">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.UpdateLayout(TLayout)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_AddNodeGreedily__0__1_System_Int32__">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.AddNodeGreedily(TLayout, TNode, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations-4.html#Edgar_Legacy_Core_LayoutOperations_AbstractLayoutOperations_4_UpdateLayout__0__1__2_">AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.UpdateLayout(TLayout, TNode, TConfiguration)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.html">Edgar.Legacy.Core.LayoutOperations</a></h6>
+  <h6><strong>Assembly</strong>: Edgar.dll</h6>
+  <h5 id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer, TEnergyData&gt; : AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;, IChainBasedLayoutOperations&lt;TLayout, TNode&gt;, ILayoutOperations&lt;TLayout, TNode&gt;, IRandomInjectable where TLayout : ILayout&lt;TNode, TConfiguration&gt;, ISmartCloneable&lt;TLayout&gt; where TConfiguration : IEnergyConfiguration&lt;TShapeContainer, TNode, TEnergyData&gt;, ISmartCloneable&lt;TConfiguration&gt;, new()
+    where TEnergyData : IEnergyData, new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TLayout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TNode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TConfiguration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TShapeContainer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TEnergyData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5__ctor_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.#ctor*"></a>
+  <h4 id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5__ctor_Edgar_Legacy_Core_ConfigurationSpaces_Interfaces_IConfigurationSpaces__1__3__2_Edgar_Legacy_Core_ConfigurationSpaces_ConfigurationSpace__System_Int32_Edgar_Legacy_Core_MapDescriptions_Interfaces_IMapDescription__1__Edgar_Legacy_Core_Constraints_ConstraintsEvaluator__0__1__2__3__4__Edgar_Legacy_Core_Constraints_ConstraintsEvaluator__0__1__2__3__4__Edgar_Legacy_Core_LayoutOperations_Interfaces_IRoomShapesHandler__0__1__3__System_Boolean_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.#ctor(Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces{`1,`3,`2,Edgar.Legacy.Core.ConfigurationSpaces.ConfigurationSpace},System.Int32,Edgar.Legacy.Core.MapDescriptions.Interfaces.IMapDescription{`1},Edgar.Legacy.Core.Constraints.ConstraintsEvaluator{`0,`1,`2,`3,`4},Edgar.Legacy.Core.Constraints.ConstraintsEvaluator{`0,`1,`2,`3,`4},Edgar.Legacy.Core.LayoutOperations.Interfaces.IRoomShapesHandler{`0,`1,`3},System.Boolean)">LayoutOperations(IConfigurationSpaces&lt;TNode, TShapeContainer, TConfiguration, ConfigurationSpace&gt;, Int32, IMapDescription&lt;TNode&gt;, ConstraintsEvaluator&lt;TLayout, TNode, TConfiguration, TShapeContainer, TEnergyData&gt;, ConstraintsEvaluator&lt;TLayout, TNode, TConfiguration, TShapeContainer, TEnergyData&gt;, IRoomShapesHandler&lt;TLayout, TNode, TShapeContainer&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayoutOperations(IConfigurationSpaces&lt;TNode, TShapeContainer, TConfiguration, ConfigurationSpace&gt; configurationSpaces, int averageSize, IMapDescription&lt;TNode&gt; mapDescription, ConstraintsEvaluator&lt;TLayout, TNode, TConfiguration, TShapeContainer, TEnergyData&gt; stageOneConstraintsEvaluator, ConstraintsEvaluator&lt;TLayout, TNode, TConfiguration, TShapeContainer, TEnergyData&gt; stageTwoConstraintsEvaluator, IRoomShapesHandler&lt;TLayout, TNode, TShapeContainer&gt; roomShapesHandler, bool throwIfRepeatModeNotSatisfied)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Core.ConfigurationSpaces.Interfaces.IConfigurationSpaces-4.html">IConfigurationSpaces</a>&lt;TNode, TShapeContainer, TConfiguration, <a class="xref" href="Edgar.Legacy.Core.ConfigurationSpaces.ConfigurationSpace.html">ConfigurationSpace</a>&gt;</td>
+        <td><span class="parametername">configurationSpaces</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">averageSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Core.MapDescriptions.Interfaces.IMapDescription-1.html">IMapDescription</a>&lt;TNode&gt;</td>
+        <td><span class="parametername">mapDescription</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Core.Constraints.ConstraintsEvaluator-5.html">ConstraintsEvaluator</a>&lt;TLayout, TNode, TConfiguration, TShapeContainer, TEnergyData&gt;</td>
+        <td><span class="parametername">stageOneConstraintsEvaluator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Core.Constraints.ConstraintsEvaluator-5.html">ConstraintsEvaluator</a>&lt;TLayout, TNode, TConfiguration, TShapeContainer, TEnergyData&gt;</td>
+        <td><span class="parametername">stageTwoConstraintsEvaluator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Core.LayoutOperations.Interfaces.IRoomShapesHandler-3.html">IRoomShapesHandler</a>&lt;TLayout, TNode, TShapeContainer&gt;</td>
+        <td><span class="parametername">roomShapesHandler</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">throwIfRepeatModeNotSatisfied</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_AddChain_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.AddChain*"></a>
+  <h4 id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_AddChain__0_System_Collections_Generic_IList__1__System_Boolean_System_Int32__" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.AddChain(`0,System.Collections.Generic.IList{`1},System.Boolean,System.Int32@)">AddChain(TLayout, IList&lt;TNode&gt;, Boolean, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Greedily adds only non corridor nodes to the layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddChain(TLayout layout, IList&lt;TNode&gt; chain, bool updateLayout, out int iterationsCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TNode&gt;</td>
+        <td><span class="parametername">chain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">updateLayout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">iterationsCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.AddChain(TLayout, System.Collections.Generic.IList&lt;TNode&gt;, System.Boolean, System.Int32)</span></div>
+  
+  
+  <a id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_AddCorridorGreedily_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.AddCorridorGreedily*"></a>
+  <h4 id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_AddCorridorGreedily__0__1_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.AddCorridorGreedily(`0,`1)">AddCorridorGreedily(TLayout, TNode)</h4>
+  <div class="markdown level1 summary"><p>Adds corridor node greedily.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddCorridorGreedily(TLayout layout, TNode node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TNode</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_AddNodeGreedily_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.AddNodeGreedily*"></a>
+  <h4 id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_AddNodeGreedily__0__1_System_Int32__" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.AddNodeGreedily(`0,`1,System.Int32@)">AddNodeGreedily(TLayout, TNode, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Tries all shapes and positions from the maximum intersection to find a configuration
+with the lowest energy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddNodeGreedily(TLayout layout, TNode node, out int iterationsCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TNode</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">iterationsCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.AddNodeGreedily(TLayout, TNode, System.Int32)</span></div>
+  
+  
+  <a id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_CreateConfiguration_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.CreateConfiguration*"></a>
+  <h4 id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_CreateConfiguration__3_Edgar_Geometry_Vector2Int__1_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.CreateConfiguration(`3,Edgar.Geometry.Vector2Int,`1)">CreateConfiguration(TShapeContainer, Vector2Int, TNode)</h4>
+  <div class="markdown level1 summary"><p>Creates a configuration with a given shape container and position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TConfiguration CreateConfiguration(TShapeContainer shapeContainer, Vector2Int position, TNode node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TShapeContainer</span></td>
+        <td><span class="parametername">shapeContainer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TNode</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfiguration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_GetEnergy_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.GetEnergy*"></a>
+  <h4 id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_GetEnergy__0_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.GetEnergy(`0)">GetEnergy(TLayout)</h4>
+  <div class="markdown level1 summary"><p>Gets an energy of a given layout by summing energies of individual nodes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override float GetEnergy(TLayout layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.GetEnergy(TLayout)</span></div>
+  
+  
+  <a id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_IsLayoutValid_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.IsLayoutValid*"></a>
+  <h4 id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_IsLayoutValid__0_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.IsLayoutValid(`0)">IsLayoutValid(TLayout)</h4>
+  <div class="markdown level1 summary"><p>Checks if a given layout is valid by first checking whether the layout itself is valid
+and then checking whether all configurations of nodes are valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsLayoutValid(TLayout layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.IsLayoutValid(TLayout)</span></div>
+  
+  
+  <a id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_IsLayoutValid_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.IsLayoutValid*"></a>
+  <h4 id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_IsLayoutValid__0_System_Collections_Generic_IList__1__" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.IsLayoutValid(`0,System.Collections.Generic.IList{`1})">IsLayoutValid(TLayout, IList&lt;TNode&gt;)</h4>
+  <div class="markdown level1 summary"><p>TODO: should it check if all nodes are laid out?
+Checks if a given layout is valid by first checking whether the layout itself is valid
+and then checking whether all configurations of nodes are valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsLayoutValid(TLayout layout, IList&lt;TNode&gt; chain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TNode&gt;</td>
+        <td><span class="parametername">chain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.IsLayoutValid(TLayout, System.Collections.Generic.IList&lt;TNode&gt;)</span></div>
+  
+  
+  <a id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_PerturbLayout_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.PerturbLayout*"></a>
+  <h4 id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_PerturbLayout__0_System_Collections_Generic_IList__1__System_Boolean_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.PerturbLayout(`0,System.Collections.Generic.IList{`1},System.Boolean)">PerturbLayout(TLayout, IList&lt;TNode&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Perturbs non corridor rooms until a valid layout is found.
+Then tries to use a greedy algorithm to lay out corridor rooms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void PerturbLayout(TLayout layout, IList&lt;TNode&gt; chain, bool updateLayout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TNode&gt;</td>
+        <td><span class="parametername">chain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">updateLayout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.PerturbLayout(TLayout, System.Collections.Generic.IList&lt;TNode&gt;, System.Boolean)</span></div>
+  
+  
+  <a id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_TryCompleteChain_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.TryCompleteChain*"></a>
+  <h4 id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_TryCompleteChain__0_System_Collections_Generic_IList__1__" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.TryCompleteChain(`0,System.Collections.Generic.IList{`1})">TryCompleteChain(TLayout, IList&lt;TNode&gt;)</h4>
+  <div class="markdown level1 summary"><p>Tries to add corridors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TryCompleteChain(TLayout layout, IList&lt;TNode&gt; chain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TNode&gt;</td>
+        <td><span class="parametername">chain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.TryCompleteChain(TLayout, System.Collections.Generic.IList&lt;TNode&gt;)</span></div>
+  
+  
+  <a id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_UpdateLayout_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.UpdateLayout*"></a>
+  <h4 id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_UpdateLayout__0_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.UpdateLayout(`0)">UpdateLayout(TLayout)</h4>
+  <div class="markdown level1 summary"><p>Updates a given layout by computing energies of all nodes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateLayout(TLayout layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.UpdateLayout(TLayout)</span></div>
+  <h5 id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_UpdateLayout__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Energies are computed from constraints.</p>
+</div>
+  
+  
+  <a id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_UpdateLayout_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.UpdateLayout*"></a>
+  <h4 id="Edgar_Legacy_Core_LayoutOperations_LayoutOperations_5_UpdateLayout__0__1__2_" data-uid="Edgar.Legacy.Core.LayoutOperations.LayoutOperations`5.UpdateLayout(`0,`1,`2)">UpdateLayout(TLayout, TNode, TConfiguration)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void UpdateLayout(TLayout layout, TNode perturbedNode, TConfiguration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TNode</span></td>
+        <td><span class="parametername">perturbedNode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Edgar.Legacy.Core.LayoutOperations.AbstractLayoutOperations&lt;TLayout, TNode, TConfiguration, TShapeContainer&gt;.UpdateLayout(TLayout, TNode, TConfiguration)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.Interfaces.IChainBasedLayoutOperations-2.html">IChainBasedLayoutOperations&lt;TLayout, TNode&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.Interfaces.ILayoutOperations-2.html">ILayoutOperations&lt;TLayout, TNode&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Edgar.Legacy.Utils.Interfaces.IRandomInjectable.html">IRandomInjectable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

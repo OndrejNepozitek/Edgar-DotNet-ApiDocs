@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DungeonDrawer&lt;TRoom&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DungeonDrawer&lt;TRoom&gt;
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawer`1">
+  
+  
+  <h1 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawer_1" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawer`1" class="text-break">Class DungeonDrawer&lt;TRoom&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Class that can export a given layout to a PNG image.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerBase.html">DungeonDrawerBase</a></div>
+    <div class="level2"><span class="xref">DungeonDrawer&lt;TRoom&gt;</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerBase.html#Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerBase_polygonPartitioning">DungeonDrawerBase.polygonPartitioning</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerBase.html#Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerBase_random">DungeonDrawerBase.random</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerBase.html#Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerBase_bitmap">DungeonDrawerBase.bitmap</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerBase.html#Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerBase_graphics">DungeonDrawerBase.graphics</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerBase.html#Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerBase_DrawGrid_Edgar_Geometry_PolygonGrid2D_">DungeonDrawerBase.DrawGrid(PolygonGrid2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerBase.html#Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerBase_DrawRoomBackground_Edgar_Geometry_PolygonGrid2D_System_Drawing_Color_">DungeonDrawerBase.DrawRoomBackground(PolygonGrid2D, Color)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerBase.html#Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerBase_DrawOutline_Edgar_Geometry_PolygonGrid2D_System_Collections_Generic_List_Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerBase_OutlineSegment__System_Drawing_Pen_">DungeonDrawerBase.DrawOutline(PolygonGrid2D, List&lt;DungeonDrawerBase.OutlineSegment&gt;, Pen)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerBase.html#Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerBase_DrawHatching_Edgar_Geometry_PolygonGrid2D_System_Collections_Generic_List_System_Tuple_Edgar_Geometry_RectangleGrid2D_System_Collections_Generic_List_Edgar_GraphBasedGenerator_Grid2D_Drawing_Vector2____Edgar_GraphBasedGenerator_Grid2D_Drawing_Range_System_Single__Edgar_GraphBasedGenerator_Grid2D_Drawing_Range_System_Single__">DungeonDrawerBase.DrawHatching(PolygonGrid2D, List&lt;Tuple&lt;RectangleGrid2D, List&lt;Vector2&gt;&gt;&gt;, Range&lt;Single&gt;, Range&lt;Single&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerBase.html#Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerBase_DrawShading_System_Collections_Generic_List_Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerBase_OutlineSegment__System_Drawing_Pen_">DungeonDrawerBase.DrawShading(List&lt;DungeonDrawerBase.OutlineSegment&gt;, Pen)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerBase.html#Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerBase_DrawTextOntoPolygon_Edgar_Geometry_PolygonGrid2D_System_String_System_Single_">DungeonDrawerBase.DrawTextOntoPolygon(PolygonGrid2D, String, Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerBase.html#Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerBase_GetOutline_Edgar_Geometry_PolygonGrid2D_System_Collections_Generic_List_Edgar_Geometry_OrthogonalLineGrid2D__Edgar_Geometry_Vector2Int_">DungeonDrawerBase.GetOutline(PolygonGrid2D, List&lt;OrthogonalLineGrid2D&gt;, Vector2Int)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.html">Edgar.GraphBasedGenerator.Grid2D.Drawing</a></h6>
+  <h6><strong>Assembly</strong>: Edgar.dll</h6>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawer_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DungeonDrawer&lt;TRoom&gt; : DungeonDrawerBase</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TRoom</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawer_1__ctor_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawer`1.#ctor*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawer_1__ctor" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawer`1.#ctor">DungeonDrawer()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DungeonDrawer()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawer_1_DrawLayout_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawer`1.DrawLayout*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawer_1_DrawLayout_Edgar_GraphBasedGenerator_Grid2D_LayoutGrid2D__0__Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawer`1.DrawLayout(Edgar.GraphBasedGenerator.Grid2D.LayoutGrid2D{`0},Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions)">DrawLayout(LayoutGrid2D&lt;TRoom&gt;, DungeonDrawerOptions)</h4>
+  <div class="markdown level1 summary"><p>Draws a given layout and returns a bitmap with the drawing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Bitmap DrawLayout(LayoutGrid2D&lt;TRoom&gt; layout, DungeonDrawerOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.LayoutGrid2D-1.html">LayoutGrid2D</a>&lt;TRoom&gt;</td>
+        <td><span class="parametername">layout</span></td>
+        <td><p>Layout to be drawn.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.html">DungeonDrawerOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Options. See <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.html">DungeonDrawerOptions</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.Bitmap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawer_1_DrawLayoutAndSave_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawer`1.DrawLayoutAndSave*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawer_1_DrawLayoutAndSave_Edgar_GraphBasedGenerator_Grid2D_LayoutGrid2D__0__System_String_Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawer`1.DrawLayoutAndSave(Edgar.GraphBasedGenerator.Grid2D.LayoutGrid2D{`0},System.String,Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions)">DrawLayoutAndSave(LayoutGrid2D&lt;TRoom&gt;, String, DungeonDrawerOptions)</h4>
+  <div class="markdown level1 summary"><p>Draws a given layout and saves it to a PNG file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawLayoutAndSave(LayoutGrid2D&lt;TRoom&gt; layout, string path, DungeonDrawerOptions options)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.LayoutGrid2D-1.html">LayoutGrid2D</a>&lt;TRoom&gt;</td>
+        <td><span class="parametername">layout</span></td>
+        <td><p>Layout to be drawn.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>Path to the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.html">DungeonDrawerOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Options. See <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.html">DungeonDrawerOptions</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,596 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AbstractLayoutDrawer&lt;TNode&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AbstractLayoutDrawer&lt;TNode&gt;
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1">
+  
+  
+  <h1 id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1" class="text-break">Class AbstractLayoutDrawer&lt;TNode&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Class that should help with drawing layouts to different outputs.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">AbstractLayoutDrawer&lt;TNode&gt;</span></div>
+      <div class="level2"><a class="xref" href="Edgar.Legacy.Utils.MapDrawing.SVGLayoutDrawer-1.html">SVGLayoutDrawer&lt;TNode&gt;</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.Legacy.Utils.MapDrawing.html">Edgar.Legacy.Utils.MapDrawing</a></h6>
+  <h6><strong>Assembly</strong>: Edgar.dll</h6>
+  <h5 id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class AbstractLayoutDrawer&lt;TNode&gt; : Object</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TNode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1__ctor_" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.#ctor*"></a>
+  <h4 id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1__ctor" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.#ctor">AbstractLayoutDrawer()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AbstractLayoutDrawer()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_DrawLayout_" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.DrawLayout*"></a>
+  <h4 id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_DrawLayout_Edgar_Legacy_Core_MapLayouts_MapLayout__0__System_Int32_System_Int32_System_Boolean_System_Nullable_System_Int32__System_Single_" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.DrawLayout(Edgar.Legacy.Core.MapLayouts.MapLayout{`0},System.Int32,System.Int32,System.Boolean,System.Nullable{System.Int32},System.Single)">DrawLayout(MapLayout&lt;TNode&gt;, Int32, Int32, Boolean, Nullable&lt;Int32&gt;, Single)</h4>
+  <div class="markdown level1 summary"><p>Entry point of the class. Draws a given layout to an output with given dimensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DrawLayout(MapLayout&lt;TNode&gt; layout, int width, int height, bool withNames, Nullable&lt;int&gt; fixedFontSize = null, float borderSize = 0.2F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Core.MapLayouts.MapLayout-1.html">MapLayout</a>&lt;TNode&gt;</td>
+        <td><span class="parametername">layout</span></td>
+        <td><p>Layout do be drawn</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td><p>Width of the output</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td><p>Height of the output</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">withNames</span></td>
+        <td><p>Whether names should be displayed</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">fixedFontSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">borderSize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_DrawLayout_" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.DrawLayout*"></a>
+  <h4 id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_DrawLayout_Edgar_Legacy_Core_MapLayouts_MapLayout__0__System_Single_Edgar_Geometry_Vector2Int_System_Boolean_System_Nullable_System_Int32__" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.DrawLayout(Edgar.Legacy.Core.MapLayouts.MapLayout{`0},System.Single,Edgar.Geometry.Vector2Int,System.Boolean,System.Nullable{System.Int32})">DrawLayout(MapLayout&lt;TNode&gt;, Single, Vector2Int, Boolean, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Draws a given layout to an output using a given scale and offset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void DrawLayout(MapLayout&lt;TNode&gt; layout, float scale, Vector2Int offset, bool withNames, Nullable&lt;int&gt; fixedFontSize = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Core.MapLayouts.MapLayout-1.html">MapLayout</a>&lt;TNode&gt;</td>
+        <td><span class="parametername">layout</span></td>
+        <td><p>Layout do be drawn</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td><p>Scale factor</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">withNames</span></td>
+        <td><p>Whether names should be displayed</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">fixedFontSize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_DrawLayout_Edgar_Legacy_Core_MapLayouts_MapLayout__0__System_Single_Edgar_Geometry_Vector2Int_System_Boolean_System_Nullable_System_Int32___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>All points are tranfosmer using the TransformPoint method.</p>
+</div>
+  
+  
+  <a id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_DrawRoom_" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.DrawRoom*"></a>
+  <h4 id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_DrawRoom_Edgar_Geometry_PolygonGrid2D_System_Collections_Generic_List_System_Tuple_Edgar_Geometry_Vector2Int_System_Boolean___System_Single_" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.DrawRoom(Edgar.Geometry.PolygonGrid2D,System.Collections.Generic.List{System.Tuple{Edgar.Geometry.Vector2Int,System.Boolean}},System.Single)">DrawRoom(PolygonGrid2D, List&lt;Tuple&lt;Vector2Int, Boolean&gt;&gt;, Single)</h4>
+  <div class="markdown level1 summary"><p>Draws a given room.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void DrawRoom(PolygonGrid2D polygon, List&lt;Tuple&lt;Vector2Int, bool&gt;&gt; outline, float penWidth)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.PolygonGrid2D.html">PolygonGrid2D</a></td>
+        <td><span class="parametername">polygon</span></td>
+        <td><p>Polygon to be drawn.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Tuple</span>&lt;<a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a>, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">outline</span></td>
+        <td><p>Outline of the room. The bool signals whether a line should be drawn (polygon side) or not (doors).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">penWidth</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_DrawTextOntoPolygon_" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.DrawTextOntoPolygon*"></a>
+  <h4 id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_DrawTextOntoPolygon_Edgar_Geometry_PolygonGrid2D_System_String_System_Single_" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.DrawTextOntoPolygon(Edgar.Geometry.PolygonGrid2D,System.String,System.Single)">DrawTextOntoPolygon(PolygonGrid2D, String, Single)</h4>
+  <div class="markdown level1 summary"><p>Draws text onto given polygon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void DrawTextOntoPolygon(PolygonGrid2D polygon, string text, float penWidth)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.PolygonGrid2D.html">PolygonGrid2D</a></td>
+        <td><span class="parametername">polygon</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">text</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">penWidth</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_GetOffset_" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.GetOffset*"></a>
+  <h4 id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_GetOffset_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Single_" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.GetOffset(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Single)">GetOffset(Int32, Int32, Int32, Int32, Int32, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Computes an offset that will move points to the first quadrant as close to axis as possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2Int GetOffset(int minx, int miny, int maxx, int maxy, int width, int height, float scale = 1F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">miny</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_GetOutline_" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.GetOutline*"></a>
+  <h4 id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_GetOutline_Edgar_Geometry_PolygonGrid2D_System_Collections_Generic_List_Edgar_GraphBasedGenerator_Grid2D_LayoutDoorGrid2D__0___" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.GetOutline(Edgar.Geometry.PolygonGrid2D,System.Collections.Generic.List{Edgar.GraphBasedGenerator.Grid2D.LayoutDoorGrid2D{`0}})">GetOutline(PolygonGrid2D, List&lt;LayoutDoorGrid2D&lt;TNode&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Computes the outline of a given polygon and its door lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected List&lt;Tuple&lt;Vector2Int, bool&gt;&gt; GetOutline(PolygonGrid2D polygon, List&lt;LayoutDoorGrid2D&lt;TNode&gt;&gt; doorLines)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.PolygonGrid2D.html">PolygonGrid2D</a></td>
+        <td><span class="parametername">polygon</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.LayoutDoorGrid2D-1.html">LayoutDoorGrid2D</a>&lt;TNode&gt;&gt;</td>
+        <td><span class="parametername">doorLines</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Tuple</span>&lt;<a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a>, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_GetScale_" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.GetScale*"></a>
+  <h4 id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_GetScale_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Single_" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.GetScale(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Single)">GetScale(Int32, Int32, Int32, Int32, Int32, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Computes a scale factor that will transform points to match given width and height.
+Some space can be also left for borders.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetScale(int minx, int miny, int maxx, int maxy, int expectedWidth, int expectedHeight, float borderSize = 0.2F)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">miny</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maxy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">expectedWidth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">expectedHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">borderSize</span></td>
+        <td><p>How much of the original image should be used for each border.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_TransformPoint_" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.TransformPoint*"></a>
+  <h4 id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_TransformPoint_Edgar_Geometry_Vector2Int_System_Single_Edgar_Geometry_Vector2Int_" data-uid="Edgar.Legacy.Utils.MapDrawing.AbstractLayoutDrawer`1.TransformPoint(Edgar.Geometry.Vector2Int,System.Single,Edgar.Geometry.Vector2Int)">TransformPoint(Vector2Int, Single, Vector2Int)</h4>
+  <div class="markdown level1 summary"><p>Both coordinates are first multiplied by the scale factor and then the offset is added.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector2Int TransformPoint(Vector2Int point, float scale, Vector2Int offset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_Legacy_Utils_MapDrawing_AbstractLayoutDrawer_1_TransformPoint_Edgar_Geometry_Vector2Int_System_Single_Edgar_Geometry_Vector2Int__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Resulting coordinates must be cast back to int.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

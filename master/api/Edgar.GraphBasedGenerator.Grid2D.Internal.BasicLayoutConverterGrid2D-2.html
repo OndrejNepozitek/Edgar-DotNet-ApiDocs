@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BasicLayoutConverterGrid2D&lt;TNode, TConfiguration&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BasicLayoutConverterGrid2D&lt;TNode, TConfiguration&gt;
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.BasicLayoutConverterGrid2D`2">
+  
+  
+  <h1 id="Edgar_GraphBasedGenerator_Grid2D_Internal_BasicLayoutConverterGrid2D_2" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.BasicLayoutConverterGrid2D`2" class="text-break">Class BasicLayoutConverterGrid2D&lt;TNode, TConfiguration&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Converts layout from its internal representation to a representation more suitable for users.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">BasicLayoutConverterGrid2D&lt;TNode, TConfiguration&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Edgar.Legacy.Core.LayoutConverters.Interfaces.ILayoutConverter-2.html">ILayoutConverter</a>&lt;<a class="xref" href="Edgar.Legacy.Core.Layouts.Interfaces.ILayout-2.html">ILayout</a>&lt;<a class="xref" href="Edgar.GraphBasedGenerator.Common.RoomNode-1.html">RoomNode</a>&lt;TNode&gt;, TConfiguration&gt;, <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.LayoutGrid2D-1.html">LayoutGrid2D</a>&lt;TNode&gt;&gt;</div>
+    <div><a class="xref" href="Edgar.Legacy.Utils.Interfaces.IRandomInjectable.html">IRandomInjectable</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Internal.html">Edgar.GraphBasedGenerator.Grid2D.Internal</a></h6>
+  <h6><strong>Assembly</strong>: Edgar.dll</h6>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_Internal_BasicLayoutConverterGrid2D_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BasicLayoutConverterGrid2D&lt;TNode, TConfiguration&gt; : Object, ILayoutConverter&lt;ILayout&lt;RoomNode&lt;TNode&gt;, TConfiguration&gt;, LayoutGrid2D&lt;TNode&gt;&gt;, IRandomInjectable where TConfiguration : IConfiguration&lt;RoomTemplateInstanceGrid2D, Vector2Int, RoomNode&lt;TNode&gt;&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TNode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TConfiguration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Internal_BasicLayoutConverterGrid2D_2__ctor_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.BasicLayoutConverterGrid2D`2.#ctor*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Internal_BasicLayoutConverterGrid2D_2__ctor_Edgar_GraphBasedGenerator_Grid2D_LevelDescriptionGrid2D__0__Edgar_GraphBasedGenerator_Grid2D_Internal_ConfigurationSpacesGrid2D__1_Edgar_GraphBasedGenerator_Common_RoomNode__0___Edgar_Legacy_GeneralAlgorithms_DataStructures_Common_TwoWayDictionary_Edgar_GraphBasedGenerator_Grid2D_Internal_RoomTemplateInstanceGrid2D_Edgar_Legacy_GeneralAlgorithms_DataStructures_Common_IntAlias_Edgar_Geometry_PolygonGrid2D___" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.BasicLayoutConverterGrid2D`2.#ctor(Edgar.GraphBasedGenerator.Grid2D.LevelDescriptionGrid2D{`0},Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationSpacesGrid2D{`1,Edgar.GraphBasedGenerator.Common.RoomNode{`0}},Edgar.Legacy.GeneralAlgorithms.DataStructures.Common.TwoWayDictionary{Edgar.GraphBasedGenerator.Grid2D.Internal.RoomTemplateInstanceGrid2D,Edgar.Legacy.GeneralAlgorithms.DataStructures.Common.IntAlias{Edgar.Geometry.PolygonGrid2D}})">BasicLayoutConverterGrid2D(LevelDescriptionGrid2D&lt;TNode&gt;, ConfigurationSpacesGrid2D&lt;TConfiguration, RoomNode&lt;TNode&gt;&gt;, TwoWayDictionary&lt;RoomTemplateInstanceGrid2D, IntAlias&lt;PolygonGrid2D&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BasicLayoutConverterGrid2D(LevelDescriptionGrid2D&lt;TNode&gt; mapDescription, ConfigurationSpacesGrid2D&lt;TConfiguration, RoomNode&lt;TNode&gt;&gt; configurationSpaces, TwoWayDictionary&lt;RoomTemplateInstanceGrid2D, IntAlias&lt;PolygonGrid2D&gt;&gt; intAliasMapping)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.LevelDescriptionGrid2D-1.html">LevelDescriptionGrid2D</a>&lt;TNode&gt;</td>
+        <td><span class="parametername">mapDescription</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationSpacesGrid2D-2.html">ConfigurationSpacesGrid2D</a>&lt;TConfiguration, <a class="xref" href="Edgar.GraphBasedGenerator.Common.RoomNode-1.html">RoomNode</a>&lt;TNode&gt;&gt;</td>
+        <td><span class="parametername">configurationSpaces</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.GeneralAlgorithms.DataStructures.Common.TwoWayDictionary-2.html">TwoWayDictionary</a>&lt;<a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Internal.RoomTemplateInstanceGrid2D.html">RoomTemplateInstanceGrid2D</a>, <a class="xref" href="Edgar.Legacy.GeneralAlgorithms.DataStructures.Common.IntAlias-1.html">IntAlias</a>&lt;<a class="xref" href="Edgar.Geometry.PolygonGrid2D.html">PolygonGrid2D</a>&gt;&gt;</td>
+        <td><span class="parametername">intAliasMapping</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Internal_BasicLayoutConverterGrid2D_2_ConfigurationSpaces" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.BasicLayoutConverterGrid2D`2.ConfigurationSpaces">ConfigurationSpaces</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly ConfigurationSpacesGrid2D&lt;TConfiguration, RoomNode&lt;TNode&gt;&gt; ConfigurationSpaces</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Internal.ConfigurationSpacesGrid2D-2.html">ConfigurationSpacesGrid2D</a>&lt;TConfiguration, <a class="xref" href="Edgar.GraphBasedGenerator.Common.RoomNode-1.html">RoomNode</a>&lt;TNode&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Internal_BasicLayoutConverterGrid2D_2_IntAliasMapping" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.BasicLayoutConverterGrid2D`2.IntAliasMapping">IntAliasMapping</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly TwoWayDictionary&lt;RoomTemplateInstanceGrid2D, IntAlias&lt;PolygonGrid2D&gt;&gt; IntAliasMapping</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.GeneralAlgorithms.DataStructures.Common.TwoWayDictionary-2.html">TwoWayDictionary</a>&lt;<a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Internal.RoomTemplateInstanceGrid2D.html">RoomTemplateInstanceGrid2D</a>, <a class="xref" href="Edgar.Legacy.GeneralAlgorithms.DataStructures.Common.IntAlias-1.html">IntAlias</a>&lt;<a class="xref" href="Edgar.Geometry.PolygonGrid2D.html">PolygonGrid2D</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Internal_BasicLayoutConverterGrid2D_2_MapDescription" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.BasicLayoutConverterGrid2D`2.MapDescription">MapDescription</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly LevelDescriptionGrid2D&lt;TNode&gt; MapDescription</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.LevelDescriptionGrid2D-1.html">LevelDescriptionGrid2D</a>&lt;TNode&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Internal_BasicLayoutConverterGrid2D_2_Random" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.BasicLayoutConverterGrid2D`2.Random">Random</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Random Random</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Random</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Internal_BasicLayoutConverterGrid2D_2_Convert_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.BasicLayoutConverterGrid2D`2.Convert*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Internal_BasicLayoutConverterGrid2D_2_Convert_Edgar_Legacy_Core_Layouts_Interfaces_ILayout_Edgar_GraphBasedGenerator_Common_RoomNode__0___1__System_Boolean_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.BasicLayoutConverterGrid2D`2.Convert(Edgar.Legacy.Core.Layouts.Interfaces.ILayout{Edgar.GraphBasedGenerator.Common.RoomNode{`0},`1},System.Boolean)">Convert(ILayout&lt;RoomNode&lt;TNode&gt;, TConfiguration&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Converts layout from TLayoutFrom to TLayoutTo.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayoutGrid2D&lt;TNode&gt; Convert(ILayout&lt;RoomNode&lt;TNode&gt;, TConfiguration&gt; layout, bool addDoors)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Core.Layouts.Interfaces.ILayout-2.html">ILayout</a>&lt;<a class="xref" href="Edgar.GraphBasedGenerator.Common.RoomNode-1.html">RoomNode</a>&lt;TNode&gt;, TConfiguration&gt;</td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">addDoors</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.LayoutGrid2D-1.html">LayoutGrid2D</a>&lt;TNode&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Internal_BasicLayoutConverterGrid2D_2_InjectRandomGenerator_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.BasicLayoutConverterGrid2D`2.InjectRandomGenerator*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Internal_BasicLayoutConverterGrid2D_2_InjectRandomGenerator_System_Random_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Internal.BasicLayoutConverterGrid2D`2.InjectRandomGenerator(System.Random)">InjectRandomGenerator(Random)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InjectRandomGenerator(Random random)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Random</span></td>
+        <td><span class="parametername">random</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutConverters.Interfaces.ILayoutConverter-2.html">ILayoutConverter&lt;TLayoutFrom, TLayoutTo&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Edgar.Legacy.Utils.Interfaces.IRandomInjectable.html">IRandomInjectable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

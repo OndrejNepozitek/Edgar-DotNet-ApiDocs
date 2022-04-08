@@ -1,0 +1,536 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DungeonDrawerOptions
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DungeonDrawerOptions
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions">
+  
+  
+  <h1 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions" class="text-break">Class DungeonDrawerOptions
+  </h1>
+  <div class="markdown level0 summary"><p>Options for the <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawer-1.html">DungeonDrawer&lt;TRoom&gt;</a> class.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DungeonDrawerOptions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.html">Edgar.GraphBasedGenerator.Grid2D.Drawing</a></h6>
+  <h6><strong>Assembly</strong>: Edgar.dll</h6>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DungeonDrawerOptions : Object</code></pre>
+  </div>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>It is possible to omit some of the <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.html#Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_Width">Width</a>, <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.html#Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_Height">Height</a> and <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.html#Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_Scale">Scale</a> properties.</p>
+<p>The drawer works like this: <br>
+If the width is set and the height is not set (and vice versa), the height is computed automatically based on the width/height ratio of the layout. <br>
+If the scale is not set, it is computed automatically in a way that the layout fits the image.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions__ctor_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.#ctor*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions__ctor" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.#ctor">DungeonDrawerOptions()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DungeonDrawerOptions()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_BackgroundColor_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.BackgroundColor*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_BackgroundColor" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.BackgroundColor">BackgroundColor</h4>
+  <div class="markdown level1 summary"><p>Background color of the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color BackgroundColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_EnableGridLines_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.EnableGridLines*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_EnableGridLines" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.EnableGridLines">EnableGridLines</h4>
+  <div class="markdown level1 summary"><p>Whether to enable grid lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableGridLines { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_EnableHatching_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.EnableHatching*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_EnableHatching" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.EnableHatching">EnableHatching</h4>
+  <div class="markdown level1 summary"><p>Whether to enable hatching.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableHatching { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_EnableShading_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.EnableShading*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_EnableShading" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.EnableShading">EnableShading</h4>
+  <div class="markdown level1 summary"><p>Whether to enable shading.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableShading { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_FontSize_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.FontSize*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_FontSize" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.FontSize">FontSize</h4>
+  <div class="markdown level1 summary"><p>The size (in tiles) of the font that is used to display room names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FontSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_FontSize_examples">Examples</h5>
+  <p>Value x: The font will have approximately the same height as x tiles in the image.</p>
+
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_HatchingClusterOffset_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.HatchingClusterOffset*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_HatchingClusterOffset" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.HatchingClusterOffset">HatchingClusterOffset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Range&lt;float&gt; HatchingClusterOffset { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.Range-1.html">Range</a>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_HatchingLength_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.HatchingLength*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_HatchingLength" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.HatchingLength">HatchingLength</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Range&lt;float&gt; HatchingLength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.Range-1.html">Range</a>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_Height_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.Height*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_Height" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.Height">Height</h4>
+  <div class="markdown level1 summary"><p>Height of the drawing (in pixels).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Nullable&lt;int&gt; Height { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_PaddingAbsolute_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.PaddingAbsolute*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_PaddingAbsolute" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.PaddingAbsolute">PaddingAbsolute</h4>
+  <div class="markdown level1 summary"><p>The size (in pixels) of the padding (empty space) on each side of the drawing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Nullable&lt;int&gt; PaddingAbsolute { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_PaddingAbsolute_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Defaults to null. When null, the <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.html#Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_PaddingPercentage">PaddingPercentage</a> is used instead.
+Shading/hatching is not taken into account when computing the padding. That means that when padding is too small,
+parts of shading might be outside of the picture. At least 10% of the width of the drawing is recommended.</p>
+</div>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_PaddingAbsolute_examples">Examples</h5>
+  <p>Value 100: There will be 100px gap on each side of the drawing.</p>
+
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_PaddingPercentage_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.PaddingPercentage*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_PaddingPercentage" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.PaddingPercentage">PaddingPercentage</h4>
+  <div class="markdown level1 summary"><p>The size (fraction of the minimum of width and height of the drawing) of the padding on each side of the drawing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PaddingPercentage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_PaddingPercentage_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is only used when <a class="xref" href="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.html#Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_PaddingAbsolute">PaddingAbsolute</a> is null.
+Shading/hatching is not taken into account when computing the padding. That means that when padding is too small,
+parts of shading might be outside of the picture. At least 10% of the width of the drawing is recommended.</p>
+</div>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_PaddingPercentage_examples">Examples</h5>
+  <p>Value 0.1f and width set to 1000px and height set to 500px: There will be 50px (10% of 500px) gap on each side of the drawing.</p>
+
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_RoomBackgroundColor_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.RoomBackgroundColor*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_RoomBackgroundColor" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.RoomBackgroundColor">RoomBackgroundColor</h4>
+  <div class="markdown level1 summary"><p>Background color of individual rooms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color RoomBackgroundColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Drawing.Color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_Scale_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.Scale*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_Scale" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.Scale">Scale</h4>
+  <div class="markdown level1 summary"><p>Scaling that will be applied to the layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Nullable&lt;float&gt; Scale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_Scale_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It is automatically computed to fit the the drawing if left null.</p>
+</div>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_Scale_examples">Examples</h5>
+  <p>Value 1.0: Layout is not scaled. Each point on the outline of each room is represented with a single pixel. <br>
+Value 10.0: Rooms are 10 times larger. 10 pixels are used to represent the line between two neighboring points. <br></p>
+
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_ShowRoomNames_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.ShowRoomNames*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_ShowRoomNames" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.ShowRoomNames">ShowRoomNames</h4>
+  <div class="markdown level1 summary"><p>Whether to show room names or not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowRoomNames { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_ShowRoomNames_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Corridor names are never shown because there is usually not enough space to write the name.</p>
+</div>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_Width_" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.Width*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Grid2D_Drawing_DungeonDrawerOptions_Width" data-uid="Edgar.GraphBasedGenerator.Grid2D.Drawing.DungeonDrawerOptions.Width">Width</h4>
+  <div class="markdown level1 summary"><p>Width of the drawing (in pixels).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Nullable&lt;int&gt; Width { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,689 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ConfigurationEvolution&lt;TConfiguration, TIndividual&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ConfigurationEvolution&lt;TConfiguration, TIndividual&gt;
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2">
+  
+  
+  <h1 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2" class="text-break">Class ConfigurationEvolution&lt;TConfiguration, TIndividual&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ConfigurationEvolution&lt;TConfiguration, TIndividual&gt;</span></div>
+      <div class="level2"><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.DungeonGeneratorEvolution.DungeonGeneratorEvolution-1.html">DungeonGeneratorEvolution&lt;TNode&gt;</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.html">Edgar.Legacy.Utils.MetaOptimization.Evolution</a></h6>
+  <h6><strong>Assembly</strong>: Edgar.dll</h6>
+  <h5 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ConfigurationEvolution&lt;TConfiguration, TIndividual&gt; : Object where TIndividual : IIndividual&lt;TConfiguration&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TConfiguration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TIndividual</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2__ctor_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.#ctor*"></a>
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2__ctor_System_Collections_Generic_List_Edgar_Legacy_Utils_MetaOptimization_Mutations_IPerformanceAnalyzer__0__1___Edgar_Legacy_Utils_MetaOptimization_Evolution_EvolutionOptions_System_String_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.#ctor(System.Collections.Generic.List{Edgar.Legacy.Utils.MetaOptimization.Mutations.IPerformanceAnalyzer{`0,`1}},Edgar.Legacy.Utils.MetaOptimization.Evolution.EvolutionOptions,System.String)">ConfigurationEvolution(List&lt;IPerformanceAnalyzer&lt;TConfiguration, TIndividual&gt;&gt;, EvolutionOptions, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ConfigurationEvolution(List&lt;IPerformanceAnalyzer&lt;TConfiguration, TIndividual&gt;&gt; analyzers, EvolutionOptions options, string resultsDirectory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Mutations.IPerformanceAnalyzer-2.html">IPerformanceAnalyzer</a>&lt;TConfiguration, TIndividual&gt;&gt;</td>
+        <td><span class="parametername">analyzers</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.EvolutionOptions.html">EvolutionOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">resultsDirectory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_Analyzers" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.Analyzers">Analyzers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;IPerformanceAnalyzer&lt;TConfiguration, TIndividual&gt;&gt; Analyzers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Mutations.IPerformanceAnalyzer-2.html">IPerformanceAnalyzer</a>&lt;TConfiguration, TIndividual&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_InitialIndividual" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.InitialIndividual">InitialIndividual</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TIndividual InitialIndividual</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TIndividual</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_Logger" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.Logger">Logger</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly Logger Logger</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.Logging.Logger.html">Logger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_Options" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.Options">Options</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly EvolutionOptions Options</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.EvolutionOptions.html">EvolutionOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_ResultsDirectory" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.ResultsDirectory">ResultsDirectory</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly string ResultsDirectory</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_ComputeNextGeneration_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.ComputeNextGeneration*"></a>
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_ComputeNextGeneration_Edgar_Legacy_Utils_MetaOptimization_Evolution_Population__1__" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.ComputeNextGeneration(Edgar.Legacy.Utils.MetaOptimization.Evolution.Population{`1})">ComputeNextGeneration(Population&lt;TIndividual&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Population&lt;TIndividual&gt; ComputeNextGeneration(Population&lt;TIndividual&gt; parentPopulation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.Population-1.html">Population</a>&lt;TIndividual&gt;</td>
+        <td><span class="parametername">parentPopulation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.Population-1.html">Population</a>&lt;TIndividual&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_CreateIndividual_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.CreateIndividual*"></a>
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_CreateIndividual_System_Int32__1_Edgar_Legacy_Utils_MetaOptimization_Mutations_IMutation__0__" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.CreateIndividual(System.Int32,`1,Edgar.Legacy.Utils.MetaOptimization.Mutations.IMutation{`0})">CreateIndividual(Int32, TIndividual, IMutation&lt;TConfiguration&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract TIndividual CreateIndividual(int id, TIndividual parent, IMutation&lt;TConfiguration&gt; mutation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TIndividual</span></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Mutations.IMutation-1.html">IMutation</a>&lt;TConfiguration&gt;</td>
+        <td><span class="parametername">mutation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TIndividual</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_CreateInitialIndividual_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.CreateInitialIndividual*"></a>
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_CreateInitialIndividual_System_Int32__0_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.CreateInitialIndividual(System.Int32,`0)">CreateInitialIndividual(Int32, TConfiguration)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract TIndividual CreateInitialIndividual(int id, TConfiguration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TIndividual</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_EvaluateIndividual_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.EvaluateIndividual*"></a>
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_EvaluateIndividual__1_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.EvaluateIndividual(`1)">EvaluateIndividual(TIndividual)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract TIndividual EvaluateIndividual(TIndividual individual)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TIndividual</span></td>
+        <td><span class="parametername">individual</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TIndividual</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_EvaluatePopulation_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.EvaluatePopulation*"></a>
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_EvaluatePopulation_Edgar_Legacy_Utils_MetaOptimization_Evolution_Population__1__" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.EvaluatePopulation(Edgar.Legacy.Utils.MetaOptimization.Evolution.Population{`1})">EvaluatePopulation(Population&lt;TIndividual&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Population&lt;TIndividual&gt; EvaluatePopulation(Population&lt;TIndividual&gt; population)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.Population-1.html">Population</a>&lt;TIndividual&gt;</td>
+        <td><span class="parametername">population</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.Population-1.html">Population</a>&lt;TIndividual&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_Evolve_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.Evolve*"></a>
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_Evolve__0_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.Evolve(`0)">Evolve(TConfiguration)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConfigurationEvolution&lt;TConfiguration, TIndividual&gt;.EvolutionResult Evolve(TConfiguration initialConfiguration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfiguration</span></td>
+        <td><span class="parametername">initialConfiguration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution-2.EvolutionResult.html">ConfigurationEvolution.EvolutionResult</a>&lt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_GetMutations_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.GetMutations*"></a>
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_GetMutations__1_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.GetMutations(`1)">GetMutations(TIndividual)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual List&lt;IMutation&lt;TConfiguration&gt;&gt; GetMutations(TIndividual individual)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TIndividual</span></td>
+        <td><span class="parametername">individual</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Mutations.IMutation-1.html">IMutation</a>&lt;TConfiguration&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_SelectBestIndividuals_" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.SelectBestIndividuals*"></a>
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_SelectBestIndividuals_Edgar_Legacy_Utils_MetaOptimization_Evolution_Population__1__Edgar_Legacy_Utils_MetaOptimization_Evolution_Population__1__" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.SelectBestIndividuals(Edgar.Legacy.Utils.MetaOptimization.Evolution.Population{`1},Edgar.Legacy.Utils.MetaOptimization.Evolution.Population{`1})">SelectBestIndividuals(Population&lt;TIndividual&gt;, Population&lt;TIndividual&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Population&lt;TIndividual&gt; SelectBestIndividuals(Population&lt;TIndividual&gt; population, Population&lt;TIndividual&gt; previousPopulation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.Population-1.html">Population</a>&lt;TIndividual&gt;</td>
+        <td><span class="parametername">population</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.Population-1.html">Population</a>&lt;TIndividual&gt;</td>
+        <td><span class="parametername">previousPopulation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Utils.MetaOptimization.Evolution.Population-1.html">Population</a>&lt;TIndividual&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  <h4 id="Edgar_Legacy_Utils_MetaOptimization_Evolution_ConfigurationEvolution_2_OnEvolutionStarted" data-uid="Edgar.Legacy.Utils.MetaOptimization.Evolution.ConfigurationEvolution`2.OnEvolutionStarted">OnEvolutionStarted</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected event Action OnEvolutionStarted</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

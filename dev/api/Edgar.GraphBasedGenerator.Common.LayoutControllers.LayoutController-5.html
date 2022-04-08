@@ -1,0 +1,989 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LayoutController&lt;TLayout, TNode, TConfiguration, TShapeContainer, TEnergyData&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LayoutController&lt;TLayout, TNode, TConfiguration, TShapeContainer, TEnergyData&gt;
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5">
+  
+  
+  <h1 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5" class="text-break">Class LayoutController&lt;TLayout, TNode, TConfiguration, TShapeContainer, TEnergyData&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Layout operations that compute energy based on given constraints.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">LayoutController&lt;TLayout, TNode, TConfiguration, TShapeContainer, TEnergyData&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Edgar.Legacy.Core.LayoutOperations.Interfaces.IChainBasedLayoutOperations-2.html">IChainBasedLayoutOperations</a>&lt;TLayout, TNode&gt;</div>
+    <div><a class="xref" href="Edgar.Legacy.Core.LayoutOperations.Interfaces.ILayoutOperations-2.html">ILayoutOperations</a>&lt;TLayout, TNode&gt;</div>
+    <div><a class="xref" href="Edgar.Legacy.Utils.Interfaces.IRandomInjectable.html">IRandomInjectable</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Edgar.GraphBasedGenerator.Common.LayoutControllers.html">Edgar.GraphBasedGenerator.Common.LayoutControllers</a></h6>
+  <h6><strong>Assembly</strong>: Edgar.dll</h6>
+  <h5 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LayoutController&lt;TLayout, TNode, TConfiguration, TShapeContainer, TEnergyData&gt; : Object, IChainBasedLayoutOperations&lt;TLayout, TNode&gt;, ILayoutOperations&lt;TLayout, TNode&gt;, IRandomInjectable where TLayout : ILayout&lt;TNode, TConfiguration&gt;, ISmartCloneable&lt;TLayout&gt; where TConfiguration : IConfiguration&lt;TShapeContainer, Vector2Int, TNode&gt;, ISmartCloneable&lt;TConfiguration&gt;, IEnergyConfiguration&lt;TEnergyData&gt;, new()
+    where TEnergyData : IEnergyData, new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TLayout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TNode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TConfiguration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TShapeContainer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TEnergyData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5__ctor_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.#ctor*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5__ctor_System_Int32_Edgar_GraphBasedGenerator_Common_ILevelDescription__1__Edgar_GraphBasedGenerator_Common_Constraints_ConstraintsEvaluator__1__2__4__Edgar_Legacy_Core_LayoutOperations_Interfaces_IRoomShapesHandler__0__1__3__System_Boolean_Edgar_GraphBasedGenerator_Common_ConfigurationSpaces_IConfigurationSpaces__2_Edgar_Geometry_Vector2Int__Edgar_GraphBasedGenerator_Common_RoomShapeGeometry_IRoomShapeGeometry__2__Edgar_GraphBasedGenerator_Common_Constraints_FixedConfigurationConstraint_IFixedConfigurationConstraint__3_Edgar_Geometry_Vector2Int__1__" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.#ctor(System.Int32,Edgar.GraphBasedGenerator.Common.ILevelDescription{`1},Edgar.GraphBasedGenerator.Common.Constraints.ConstraintsEvaluator{`1,`2,`4},Edgar.Legacy.Core.LayoutOperations.Interfaces.IRoomShapesHandler{`0,`1,`3},System.Boolean,Edgar.GraphBasedGenerator.Common.ConfigurationSpaces.IConfigurationSpaces{`2,Edgar.Geometry.Vector2Int},Edgar.GraphBasedGenerator.Common.RoomShapeGeometry.IRoomShapeGeometry{`2},Edgar.GraphBasedGenerator.Common.Constraints.FixedConfigurationConstraint.IFixedConfigurationConstraint{`3,Edgar.Geometry.Vector2Int,`1})">LayoutController(Int32, ILevelDescription&lt;TNode&gt;, ConstraintsEvaluator&lt;TNode, TConfiguration, TEnergyData&gt;, IRoomShapesHandler&lt;TLayout, TNode, TShapeContainer&gt;, Boolean, IConfigurationSpaces&lt;TConfiguration, Vector2Int&gt;, IRoomShapeGeometry&lt;TConfiguration&gt;, IFixedConfigurationConstraint&lt;TShapeContainer, Vector2Int, TNode&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayoutController(int averageSize, ILevelDescription&lt;TNode&gt; levelDescription, ConstraintsEvaluator&lt;TNode, TConfiguration, TEnergyData&gt; constraintsEvaluator, IRoomShapesHandler&lt;TLayout, TNode, TShapeContainer&gt; roomShapesHandler, bool throwIfRepeatModeNotSatisfied, IConfigurationSpaces&lt;TConfiguration, Vector2Int&gt; simpleConfigurationSpaces, IRoomShapeGeometry&lt;TConfiguration&gt; roomShapeGeometry, IFixedConfigurationConstraint&lt;TShapeContainer, Vector2Int, TNode&gt; fixedConfigurationConstraint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">averageSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Common.ILevelDescription-1.html">ILevelDescription</a>&lt;TNode&gt;</td>
+        <td><span class="parametername">levelDescription</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Common.Constraints.ConstraintsEvaluator-3.html">ConstraintsEvaluator</a>&lt;TNode, TConfiguration, TEnergyData&gt;</td>
+        <td><span class="parametername">constraintsEvaluator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Legacy.Core.LayoutOperations.Interfaces.IRoomShapesHandler-3.html">IRoomShapesHandler</a>&lt;TLayout, TNode, TShapeContainer&gt;</td>
+        <td><span class="parametername">roomShapesHandler</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">throwIfRepeatModeNotSatisfied</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Common.ConfigurationSpaces.IConfigurationSpaces-2.html">IConfigurationSpaces</a>&lt;TConfiguration, <a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a>&gt;</td>
+        <td><span class="parametername">simpleConfigurationSpaces</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Common.RoomShapeGeometry.IRoomShapeGeometry-1.html">IRoomShapeGeometry</a>&lt;TConfiguration&gt;</td>
+        <td><span class="parametername">roomShapeGeometry</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.GraphBasedGenerator.Common.Constraints.FixedConfigurationConstraint.IFixedConfigurationConstraint-3.html">IFixedConfigurationConstraint</a>&lt;TShapeContainer, <a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a>, TNode&gt;</td>
+        <td><span class="parametername">fixedConfigurationConstraint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_AddChain_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.AddChain*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_AddChain__0_System_Collections_Generic_IList__1__System_Boolean_System_Int32__" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.AddChain(`0,System.Collections.Generic.IList{`1},System.Boolean,System.Int32@)">AddChain(TLayout, IList&lt;TNode&gt;, Boolean, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Greedily adds only non corridor nodes to the layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddChain(TLayout layout, IList&lt;TNode&gt; chain, bool updateLayout, out int iterationsCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TNode&gt;</td>
+        <td><span class="parametername">chain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">updateLayout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">iterationsCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_AddCorridorGreedily_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.AddCorridorGreedily*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_AddCorridorGreedily__0__1_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.AddCorridorGreedily(`0,`1)">AddCorridorGreedily(TLayout, TNode)</h4>
+  <div class="markdown level1 summary"><p>Adds corridor node greedily.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddCorridorGreedily(TLayout layout, TNode node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TNode</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_AddNodeGreedily_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.AddNodeGreedily*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_AddNodeGreedily__0__1_System_Int32__" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.AddNodeGreedily(`0,`1,System.Int32@)">AddNodeGreedily(TLayout, TNode, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Tries all shapes and positions from the maximum intersection to find a configuration
+with the lowest energy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddNodeGreedily(TLayout layout, TNode node, out int iterationsCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TNode</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">iterationsCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_AreDifferentEnough_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.AreDifferentEnough*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_AreDifferentEnough__0__0_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.AreDifferentEnough(`0,`0)">AreDifferentEnough(TLayout, TLayout)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AreDifferentEnough(TLayout layout1, TLayout layout2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_AreDifferentEnough_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.AreDifferentEnough*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_AreDifferentEnough__0__0_System_Collections_Generic_IList__1__" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.AreDifferentEnough(`0,`0,System.Collections.Generic.IList{`1})">AreDifferentEnough(TLayout, TLayout, IList&lt;TNode&gt;)</h4>
+  <div class="markdown level1 summary"><p>Checks if two layouts are different enough by comparing positions of corresponding nodes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AreDifferentEnough(TLayout layout1, TLayout layout2, IList&lt;TNode&gt; chain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TNode&gt;</td>
+        <td><span class="parametername">chain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_CreateConfiguration_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.CreateConfiguration*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_CreateConfiguration__3_Edgar_Geometry_Vector2Int__1_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.CreateConfiguration(`3,Edgar.Geometry.Vector2Int,`1)">CreateConfiguration(TShapeContainer, Vector2Int, TNode)</h4>
+  <div class="markdown level1 summary"><p>Creates a configuration with a given shape container and position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TConfiguration CreateConfiguration(TShapeContainer shapeContainer, Vector2Int position, TNode node)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TShapeContainer</span></td>
+        <td><span class="parametername">shapeContainer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Edgar.Geometry.Vector2Int.html">Vector2Int</a></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TNode</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TConfiguration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_GetEnergy_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.GetEnergy*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_GetEnergy__0_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.GetEnergy(`0)">GetEnergy(TLayout)</h4>
+  <div class="markdown level1 summary"><p>Gets an energy of a given layout by summing energies of individual nodes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetEnergy(TLayout layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_InjectRandomGenerator_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.InjectRandomGenerator*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_InjectRandomGenerator_System_Random_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.InjectRandomGenerator(System.Random)">InjectRandomGenerator(Random)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InjectRandomGenerator(Random random)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Random</span></td>
+        <td><span class="parametername">random</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_IsLayoutValid_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.IsLayoutValid*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_IsLayoutValid__0_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.IsLayoutValid(`0)">IsLayoutValid(TLayout)</h4>
+  <div class="markdown level1 summary"><p>Checks if a given layout is valid by first checking whether the layout itself is valid
+and then checking whether all configurations of nodes are valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLayoutValid(TLayout layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_IsLayoutValid_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.IsLayoutValid*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_IsLayoutValid__0_System_Collections_Generic_IList__1__" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.IsLayoutValid(`0,System.Collections.Generic.IList{`1})">IsLayoutValid(TLayout, IList&lt;TNode&gt;)</h4>
+  <div class="markdown level1 summary"><p>TODO: should it check if all nodes are laid out?
+Checks if a given layout is valid by first checking whether the layout itself is valid
+and then checking whether all configurations of nodes are valid.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsLayoutValid(TLayout layout, IList&lt;TNode&gt; chain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TNode&gt;</td>
+        <td><span class="parametername">chain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_PerturbLayout_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.PerturbLayout*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_PerturbLayout__0_System_Collections_Generic_IList__1__System_Boolean_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.PerturbLayout(`0,System.Collections.Generic.IList{`1},System.Boolean)">PerturbLayout(TLayout, IList&lt;TNode&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Perturbs non corridor rooms until a valid layout is found.
+Then tries to use a greedy algorithm to lay out corridor rooms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PerturbLayout(TLayout layout, IList&lt;TNode&gt; chain, bool updateLayout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TNode&gt;</td>
+        <td><span class="parametername">chain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">updateLayout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_PerturbPosition_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.PerturbPosition*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_PerturbPosition__0__1_System_Boolean_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.PerturbPosition(`0,`1,System.Boolean)">PerturbPosition(TLayout, TNode, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PerturbPosition(TLayout layout, TNode node, bool updateLayout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TNode</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">updateLayout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_PerturbPosition_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.PerturbPosition*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_PerturbPosition__0_System_Collections_Generic_IList__1__System_Boolean_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.PerturbPosition(`0,System.Collections.Generic.IList{`1},System.Boolean)">PerturbPosition(TLayout, IList&lt;TNode&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PerturbPosition(TLayout layout, IList&lt;TNode&gt; chain, bool updateLayout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TNode&gt;</td>
+        <td><span class="parametername">chain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">updateLayout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_PerturbShape_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.PerturbShape*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_PerturbShape__0__1_System_Boolean_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.PerturbShape(`0,`1,System.Boolean)">PerturbShape(TLayout, TNode, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PerturbShape(TLayout layout, TNode node, bool updateLayout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TNode</span></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">updateLayout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_PerturbShape_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.PerturbShape*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_PerturbShape__0_System_Collections_Generic_IList__1__System_Boolean_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.PerturbShape(`0,System.Collections.Generic.IList{`1},System.Boolean)">PerturbShape(TLayout, IList&lt;TNode&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PerturbShape(TLayout layout, IList&lt;TNode&gt; chain, bool updateLayout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TNode&gt;</td>
+        <td><span class="parametername">chain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">updateLayout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_TryCompleteChain_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.TryCompleteChain*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_TryCompleteChain__0_System_Collections_Generic_IList__1__" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.TryCompleteChain(`0,System.Collections.Generic.IList{`1})">TryCompleteChain(TLayout, IList&lt;TNode&gt;)</h4>
+  <div class="markdown level1 summary"><p>Tries to add corridors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryCompleteChain(TLayout layout, IList&lt;TNode&gt; chain)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;TNode&gt;</td>
+        <td><span class="parametername">chain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_UpdateLayout_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.UpdateLayout*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_UpdateLayout__0_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.UpdateLayout(`0)">UpdateLayout(TLayout)</h4>
+  <div class="markdown level1 summary"><p>Updates a given layout by computing energies of all nodes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateLayout(TLayout layout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_UpdateLayout__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Energies are computed from constraints.</p>
+</div>
+  
+  
+  <a id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_UpdateLayout_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.UpdateLayout*"></a>
+  <h4 id="Edgar_GraphBasedGenerator_Common_LayoutControllers_LayoutController_5_UpdateLayout__0__1__2_" data-uid="Edgar.GraphBasedGenerator.Common.LayoutControllers.LayoutController`5.UpdateLayout(`0,`1,`2)">UpdateLayout(TLayout, TNode, TConfiguration)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdateLayout(TLayout layout, TNode perturbedNode, TConfiguration configuration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TLayout</span></td>
+        <td><span class="parametername">layout</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TNode</span></td>
+        <td><span class="parametername">perturbedNode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.Interfaces.IChainBasedLayoutOperations-2.html">IChainBasedLayoutOperations&lt;TLayout, TNode&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Edgar.Legacy.Core.LayoutOperations.Interfaces.ILayoutOperations-2.html">ILayoutOperations&lt;TLayout, TNode&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="Edgar.Legacy.Utils.Interfaces.IRandomInjectable.html">IRandomInjectable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
